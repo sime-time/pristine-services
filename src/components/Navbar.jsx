@@ -1,19 +1,15 @@
-const navItems = [
-  {label: "Home", url: "/"},
-  {label: "About Us", url: "/about"},
-  {label: "Services", url: "/services"}, 
-  {label: "Reviews", url: "/reviews"},
-  {label: "FAQ", url: "/faq"},
-  {label: "Contact", url: "/contact"}
-];
+import { navOptions } from "./NavItems";
+import NavItems from "./NavItems";
 
 export default function Navbar() {
   return (
     <nav>
-      <ul>
-        <li>
-          <a>Home</a> 
-        </li>
+      <ul className="menus">
+        {navOptions.map((menu, index) => {
+          const depthLevel = 0;
+          return <NavItems items={menu} key={index} depthLevel={depthLevel} />;
+        })
+        }
       </ul>
     </nav>
   );

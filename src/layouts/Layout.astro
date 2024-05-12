@@ -17,29 +17,46 @@ const { title } = Astro.props;
       name="description"
       content="Pristine Services offers premium deep cleaning, airbnb cleaning, move in/out cleaning, post construction cleaning, and commercial cleaning services."
     />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
   <body>
     <Header />
+    <hr />
     <slot />
+    <hr />
     <Footer />
   </body>
 </html>
 
 <style is:global>
+  @import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap");
+  :root {
+    font-family: "Asap", sans-serif;
+    --bold-weight: 700;
+    --color-text: #1f4b38;
+    --color-accent: #2a8f77;
+    --color-background: #f5f7fa;
+    --color-background-secondary: #c3e3d5;
+    --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+
   * {
     box-sizing: border-box;
     margin: 0;
   }
+
   html {
     font-size: 16px;
   }
-  button {
-    color: inherit;
+
+  body {
+    color: var(--color-text);
+    background-color: var(--color-background);
   }
+
   .no-scroll {
     height: 100vh;
     overflow: hidden;
