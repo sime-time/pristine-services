@@ -1,12 +1,7 @@
 ---
-import Navbar from "../components/Navbar.jsx";
+import Navigation from "../components/Navigation.jsx";
 ---
 
-<header>
-  <div class="nav-area">
-    <a href="/#" class="logo">Pristine Services</a>
-    <Navbar />
-  </div>
+<header class="bg-body-tertiary">
+  <Navigation client:load />
 </header>
-
-<style is:global></style>
