@@ -5,17 +5,21 @@ import NavDropdown from 'react-bootstrap/cjs/NavDropdown.js';
 
 export default function Navigation() {
   return (
-    <Navbar expand="lg">
+    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="/">
           <img src="logo.svg" height="80" className="d-inline-block align-top" alt="Company logo" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
+            <Nav.Link className="fw-bold" href="tel:3175378111">317-513-8111</Nav.Link>
+          </Nav>
+          <Nav>
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
-            <NavDropdown title="Services" id="basic-nav-dropdown">
+            <Nav.Link href="/contact">Contact</Nav.Link>
+            <NavDropdown title="Services" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="/residential">Residential</NavDropdown.Item>
               <NavDropdown.Item href="/commercial">Commercial</NavDropdown.Item>
               <NavDropdown.Item href="/airbnb">Airbnb</NavDropdown.Item>
