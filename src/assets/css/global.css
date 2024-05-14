@@ -12,15 +12,15 @@
   --bs-font-size-lg: 1.5rem;
 
   /* background */
-  --color-accent: #2a8f77;
+  --accent-color: #2a8f77;
   --bs-body-bg: #f5f7fa;
 }
 
 body {
   color: var(--color-text);
-  background-color: var(--color-background);
+  background-color: var(--bs-body-bg);
 }
 
-.bg-body-tertiary {
+.bg-body-secondary {
   background-color: #daffef !important;
 }
