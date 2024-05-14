@@ -8,7 +8,7 @@ export default function Navigation() {
     <Navbar collapseOnSelect expand="lg" className="bg-body-secondary">
       <Container>
         <Navbar.Brand href="/">
-          <img src="logo.svg" height="80" className="d-inline-block align-top" alt="Company logo" />
+          <img src="logo.svg" height="120" className="d-inline-block align-top" alt="Company logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
