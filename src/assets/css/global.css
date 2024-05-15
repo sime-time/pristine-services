@@ -14,6 +14,8 @@
   /* background */
   --accent-color: #2a8f77;
   --bs-body-bg: #f5f7fa;
+
+  --border-radius: 1.25rem;
 }
 
 body {
