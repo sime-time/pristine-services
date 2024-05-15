@@ -17,9 +17,6 @@ export default function Navigation() {
           </Nav>
           <Nav>
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="/faq">FAQ</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
             <NavDropdown title="Services" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="/residential">Residential</NavDropdown.Item>
               <NavDropdown.Item href="/commercial">Commercial</NavDropdown.Item>
@@ -27,6 +24,9 @@ export default function Navigation() {
               <NavDropdown.Divider />
               <NavDropdown.Item href="/checklist">Cleaning Checklist</NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link href="/faq">FAQ</Nav.Link>
+            <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
