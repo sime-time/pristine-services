@@ -16,29 +16,33 @@ import Card from "./card.astro";
             </div>
 
             <div class = "VStack">
-                <Card
-                 image = "",
-                 title = "We never cancel. Ever.", 
-                 description = "Cleaning is a commitment. If we were to cancel, we'd pay you $100. Guaranteed."
-                 />
+                <div class = "VGrid Container">
 
-                 <Card
-                 image = "",
-                 title = "Your happinness, guaranteed", 
-                 description = "We ask for feedback after each visit. If you're not 100% satisfied with our services, we will make it right."
-                 />
+                    <Card
+                    image = "",
+                    title = "We never cancel. Ever.", 
+                    description = "Cleaning is a commitment. If we were to cancel, we'd pay you $100. Guaranteed."
+                    />
 
-                 <Card
-                 image = "",
-                 title = "Know who's in your home", 
-                 description = "Want the same cleaning team every time? We can make that happen, just let us know when you sign up for service."
-                 />
+                    <Card
+                    image = "",
+                    title = "Your happinness, guaranteed", 
+                    description = "We ask for feedback after each visit. If you're not 100% satisfied with our services, we will make it right."
+                    />
 
-                 <Card
-                 image = "",
-                 title = "Quality control", 
-                 description = "Our quality control inspectors follow behind our teams to make sure we deliver the sparkly results we promise."
-                 />
+                    <Card
+                    image = "",
+                    title = "Know who's in your home", 
+                    description = "Want the same cleaning team every time? We can make that happen, just let us know when you sign up for service."
+                    />
+
+                    <Card
+                    image = "",
+                    title = "Quality control", 
+                    description = "Our quality control inspectors follow behind our teams to make sure we deliver the sparkly results we promise."
+                    />
+
+                </div>
             </div>
 
         </div>
@@ -47,6 +51,12 @@ import Card from "./card.astro";
 
 
 <style>
+    .Container
+    {
+        background-color: white;
+        border-radius: 1rem;
+        border: 2px solid var(--accent-color);
+    }
     p 
     {
         font-size: 1.5rem;
@@ -75,6 +85,13 @@ import Card from "./card.astro";
         background-color: var(--accent-color);
         color: white;
         border: 2px solid var(--accent-color);
+    }
+
+    .VGrid 
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.5rem;
     }
 
     .VStack 
