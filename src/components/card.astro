@@ -1,0 +1,85 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+interface Props {
+    image: string
+    title: string
+    description: string
+}
+
+const {image, title, description} = Astro.props
+---
+    <div class="Info-Card">
+       
+        <div class="VStack">
+            <div class = "Card-Image">
+                <img src={image} alt="image"/>
+            </div>
+            
+            <h2>{title}</h2>
+
+            <p>{description}</p>
+        </div>
+    </div>
+
+
+<style>
+
+    .VStack 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+  .Info-Card 
+  {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+    border-radius: 0.5rem;
+    margin: 50px;
+    padding: 50px;
+    text-align: center;
+    height: 350px; /* Let the height be determined by content */
+    max-height: 350px; /* Optional: Set a maximum height */
+    width: auto;
+  }
+
+  .Card-Image
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 100px;
+    width: auto;
+    overflow: hidden;
+  }
+
+  .Card-Image > img 
+  {
+    margin-bottom: 2px; /* Set specific dimensions for the image */
+    width: 100px; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+    object-fit: contain;
+  }
+
+  .Info-Card > h2 
+  {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-style: italic;
+  }
+
+  .Info-Card > p 
+  {
+    font-size: 1.5rem;
+  }
+
+</style>
+
