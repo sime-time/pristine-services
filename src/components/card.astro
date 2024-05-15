@@ -13,12 +13,12 @@ const {image, title, description} = Astro.props
        
         <div class="VStack">
             <div class = "Card-Image">
-                <img src={image} alt="image"/>
+                <img src={image} alt={title}/>
             </div>
             
-            <h2>{title}</h2>
+            <p class="Card-Title">{title}</p>
+            <p class="Card-Description">{description}</p>
 
-            <p>{description}</p>
         </div>
     </div>
 
@@ -59,6 +59,7 @@ const {image, title, description} = Astro.props
     max-height: 100px;
     width: auto;
     overflow: hidden;
+    margin-bottom: 30px;
   }
 
   .Card-Image > img 
@@ -69,16 +70,17 @@ const {image, title, description} = Astro.props
     object-fit: contain;
   }
 
-  .Info-Card > h2 
+  .Card-Title 
   {
     font-size: 1.5rem;
     font-weight: bolder;
     font-style: italic;
   }
 
-  .Info-Card > p 
+  .Card-Description 
   {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    font-style: italic;
   }
 
 </style>
