@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import "halfmoon/css/halfmoon.min.css";
 
 interface Props {
   image: string;
@@ -10,7 +11,8 @@ interface Props {
 const { image, title, description } = Astro.props;
 ---
 
-<div class="Info-Card">
+
+<div class="shadow Info-Card">
   <div class="VStack">
     <div class="Card-Image">
       <img src={image} alt={title} />
@@ -35,7 +37,7 @@ const { image, title, description } = Astro.props;
     background-color: white;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+   
     border-radius: var(--border-radius);
     margin: 50px;
     padding: 50px;

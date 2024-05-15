@@ -1,0 +1,99 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "halfmoon/css/halfmoon.min.css";
+import Card from "./card.astro";
+---
+<section>
+    <div class="Our-Process-Section">
+        <div class="HStack">
+
+            <div class = "VStack">
+                
+                <p>Come see why Pristine Services is loved and trusted by homeowners like you.</p>
+
+                <a class="Quote-btn">Get an Instant Quote</a>
+
+            </div>
+
+            <div class = "VStack">
+                <Card
+                 image = "",
+                 title = "We never cancel. Ever.", 
+                 description = "Cleaning is a commitment. If we were to cancel, we'd pay you $100. Guaranteed."
+                 />
+
+                 <Card
+                 image = "",
+                 title = "Your happinness, guaranteed", 
+                 description = "We ask for feedback after each visit. If you're not 100% satisfied with our services, we will make it right."
+                 />
+
+                 <Card
+                 image = "",
+                 title = "Know who's in your home", 
+                 description = "Want the same cleaning team every time? We can make that happen, just let us know when you sign up for service."
+                 />
+
+                 <Card
+                 image = "",
+                 title = "Quality control", 
+                 description = "Our quality control inspectors follow behind our teams to make sure we deliver the sparkly results we promise."
+                 />
+            </div>
+
+        </div>
+    </div> 
+</section>
+
+
+<style>
+    p 
+    {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    a 
+    {
+        display: inline-block;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        border: 2px solid var(--accent-color);
+        box-sizing: border-box;
+        cursor: pointer;
+        background-color: white;
+        color: var(--accent-color);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-top: 2rem;
+        transition: all 0.3s ease;
+    }
+
+    a:hover 
+    {
+        background-color: var(--accent-color);
+        color: white;
+        border: 2px solid var(--accent-color);
+    }
+
+    .VStack 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .HStack 
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .ZStack 
+    {
+        position: relative;
+    }
+</style>
