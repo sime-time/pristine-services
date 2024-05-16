@@ -9,6 +9,8 @@ export default function FAQAccordion() {
     return (
         <div >
             {Sections.map(section => (
+                <div class={section.Header}>
+                <h4>{section.Header}</h4>
                     <Accordion >
                         {section.questions.map(question => (
                                 <Accordion.Item eventKey={`${section.Header}-${question.id}`}>
@@ -17,6 +19,7 @@ export default function FAQAccordion() {
                                 </Accordion.Item>
                             ))}
                     </Accordion>
+                    </div>
                     
         ))}
         
