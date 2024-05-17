@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "halfmoon/css/halfmoon.min.css";
+import FAQuestions from '../assets/misc/Accordion.json';
+
+interface Props 
+{
+  Header: string;
+  question: string;
+  answer: string;
+}
+
+const { Header, question, answer } = Astro.props;
+---
+
+
+<div class="shadow Accordion">
+
+    <div class = "Accordion-Header">
+        <h4>{Header}</h4>
+    </div>
+
+    <div class="VStack">
+        <ul class = "Accordion-List-Questions">
+            <li class = "Accordion-Item">
+                <p>{question}</p>
+                <p>{answer}</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<style>
+
+  .VStack 
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+    .Accordion 
+    {
+        max-width: 400px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: purple;
+    }
+
+
+  
+</style>

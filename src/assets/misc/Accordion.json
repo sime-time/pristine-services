@@ -1,0 +1,111 @@
+{
+    "Sections": 
+    [
+        {
+            "Header": "Appointments and scheduling",
+            "questions": [
+
+                {
+                    "id": 0,
+                    "title": "How do I stop my recurring service?",
+                    "body": "Email or call us. You can stop whenever you like."
+                },
+
+                {
+                    "id": 1,
+                    "title": "Why can't I schedule a specific appointment time?",
+                    "body": "We clean many homes a day, and it's impossible for us to know exactly how long each home cleaning will take. That's why we offer you a preferred window of time, instead of a specific appointment time. That being said, if you ever have specific scheduling needs, all you have to do is reach out to us, and we will do our very best to accommodate you."
+                },
+
+                {
+                    "id": 2,
+                    "title": "How will I know when the maids are coming?",
+                    "body": ""
+                },
+
+                {
+                    "id": 3,
+                    "title": "What if I need to reschedule?",
+                    "body": ""
+                },
+
+                {
+                    "id": 4,
+                    "title": "Will you ever cancel my appointment?",
+                    "body": ""
+                }
+            ]
+        },
+
+        {
+            "Header": "Home Access",
+            "questions": [
+                {
+                    "id": 0,
+                    "title": "How do the maids enter my home?",
+                    "body": ""
+                }
+            ]
+        },
+
+        {
+            "Header": "Your Feedback",
+            "questions": [
+                {
+                    "id": 0,
+                    "title": "How can I leave feedback?",
+                    "body": ""
+                },
+
+                {
+                    "id": 1,
+                    "title": "What if I'm not happy with my service?",
+                    "body": ""
+                }
+            ]
+        },
+
+        {
+            "Header": "Our Maid Service",
+            "questions": [
+                {
+                    "id": 0,
+                    "title": "How many housekeepers do you send to clean?",
+                    "body": ""
+                },
+
+                {
+                    "id": 1,
+                    "title": "Do I need to provide supplies?",
+                    "body": ""
+                },
+
+                {
+                    "id": 2,
+                    "title": "Do I need to do anything before the housekeepers arrive?",
+                    "body": ""
+                },
+
+                {
+                    "id": 3,
+                    "title": "Can I request the same housekeepers each visit?",
+                    "body": ""
+                },
+
+                {
+                    "id": 4,
+                    "title": "Do I need to prepare anything for a move-out clean?",
+                    "body": ""
+                },
+
+                {
+                    "id": 5,
+                    "title": "What won't Pristine Services teams clean?",
+                    "body": ""
+                }
+            ]
+        }
+
+    ]
+}
+
