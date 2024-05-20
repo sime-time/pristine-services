@@ -10,7 +10,7 @@ import { Sections } from '../assets/misc/Accordion.json';
     {Sections.map((section) => (
 
             <div class="Accordion-Header">
-                <h4>{section.Header}</h4>
+                <h3>{section.Header}</h3>
             </div>
 
             <div class=" Accordion-List-Questions">
@@ -68,10 +68,23 @@ input[type="checkbox"]
     appearnace: none;
 }
 
+
+.Accordion-Header
+{
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
 /* Accordion Item Styles */
 .Accordion-Item 
 {
     padding: 1em;
+    font-size: 17.6px;
+    color: var(--accent-color);
     background-color: #fff;
     border-radius: 0.5em;
 
@@ -85,19 +98,17 @@ input[type="checkbox"]
 
 .Accordion-Answer 
 {
-    color: var(--text-color);
-    font-size: 1em;
+    font-weight: 500;
     line-height: 1.8em;  
 }
 
 label
 {
-    font-size: 1em;
+    
     display: flex;
     justify-content: space-between;
-    color: var(--accent-color);
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 700;
     padding: 1em 0;
 }
 

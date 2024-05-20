@@ -2,6 +2,41 @@
     "Sections": 
     [
         {
+            "Header": "Billing and pricing",
+            "questions": [
+                {
+                    "id": 0,
+                    "title": "When do you charge my credit card?",
+                    "body": "We charge all credit cards on the day of service, after the cleaning is finished."
+                },
+
+                {
+                    "id": 1,
+                    "title": "What fees could I incur by canceling or rescheduling?",
+                    "body": "We only charge fees when we really need to. If you cancel or reschedule an appointment after 3:00 pm the day before your cleaning, we may charge a $40 last-minute change fee. If you choose to cancel your recurring service before your second visit, we will charge you $69, to bring your pricing closer to our \"one-time\" service offering."
+                },
+
+                {
+                    "id": 2,
+                    "title": "How do you determine my cleaning price?",
+                    "body": "Your price depends on the size of your home, the number of pets you have, your frequency, and whatever add-on services you choose to include."
+                },
+
+                {
+                    "id": 3,
+                    "title": "What if my home is over 4,000+ sq. ft.?",
+                    "body": "Many clients with larger homes prefer to order hourly service and pick and choose which parts of the house they want us to clean on a visit-by-visit basis. That being said, a fixed-price option is still available to you."
+                },
+
+                {
+                    "id": 4,
+                    "title": "Is tipping expected?",
+                    "body": "Tipping is entirely optional, but very much appreciated by your cleaning team."
+                }
+            ]
+        },
+
+        {
             "Header": "Appointments and scheduling",
             "questions": [
 
