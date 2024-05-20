@@ -55,19 +55,19 @@
                 {
                     "id": 2,
                     "title": "How will I know when the maids are coming?",
-                    "body": ""
+                    "body": "We send ETA text messages, or notifications from our app, when we're on our way to your home."
                 },
 
                 {
                     "id": 3,
                     "title": "What if I need to reschedule?",
-                    "body": ""
+                    "body": "No problem! You can reschedule in our app or via email. Make sure to reschedule by 3:00 pm the day before your cleaning, to avoid a last-minute rescheduling fee."
                 },
 
                 {
                     "id": 4,
                     "title": "Will you ever cancel my appointment?",
-                    "body": ""
+                    "body": "Nope. We never cancel. Ever. If we do, we'll pay you $100, guaranteed. The only exception to this policy is in the case of a natural disaster."
                 }
             ]
         },
@@ -78,7 +78,7 @@
                 {
                     "id": 0,
                     "title": "How do the maids enter my home?",
-                    "body": ""
+                    "body": "You can either be at home to let them in, hide a key somewhere, or give us a lockbox code to keep on file."
                 }
             ]
         },
@@ -89,13 +89,13 @@
                 {
                     "id": 0,
                     "title": "How can I leave feedback?",
-                    "body": ""
+                    "body": "We ask for your feedback after every single visit, via email or in our app."
                 },
 
                 {
                     "id": 1,
                     "title": "What if I'm not happy with my service?",
-                    "body": ""
+                    "body": "Your happiness is the reason we do our work. If you're not 100% satisfied with our services, reach out to us within 24 hours of your cleaning, and we'll find a way to make it right."
                 }
             ]
         },
@@ -106,41 +106,139 @@
                 {
                     "id": 0,
                     "title": "How many housekeepers do you send to clean?",
-                    "body": ""
+                    "body": "Two – but it depends on your home and your needs. On rare occasions, we send teams of three or four."
                 },
 
                 {
                     "id": 1,
                     "title": "Do I need to provide supplies?",
-                    "body": ""
+                    "body": "Nope – we provide all of our own supplies and equipment. If you prefer we use your items, please let the office know beforehand."
                 },
 
                 {
                     "id": 2,
                     "title": "Do I need to do anything before the housekeepers arrive?",
-                    "body": ""
+                    "body": "Yes, please – to make our services more efficient, we ask that you pick up clothing, toys, and other household items before the cleaning."
                 },
 
                 {
                     "id": 3,
                     "title": "Can I request the same housekeepers each visit?",
-                    "body": ""
+                    "body": "Yup – we will make every effort to have the same team clean your home each visit. However, due to illness, vacations or days off, we can't guarantee it."
                 },
 
                 {
                     "id": 4,
                     "title": "Do I need to prepare anything for a move-out clean?",
-                    "body": ""
+                    "body": "Yes, please – we need electricity and water to clean, so please make sure your utilities are still functioning."
                 },
 
                 {
                     "id": 5,
                     "title": "What won't Pristine Services teams clean?",
-                    "body": ""
+                    "body": "For health reasons, our teams will not clean blood, feces, vomit, or urine from animals or humans."
+                }
+            ]
+        },
+
+        {
+            "Header": "Pristine Clean Staff",
+            "questions": [
+                {
+                    "id": 0,
+                    "title": "Do you use contract labor?",
+                    "body": "Nope. All our employees are full-time, five-star, Pristine Clean employees."
+                },
+
+                {
+                    "id": 1,
+                    "title": "Do you pay your employees well?",
+                    "body": "Yup. All staff earn a living wage. We provide full benefits, including medical, dental, and life insurance, paid vacation, and monthly and holiday bonuses for a job well done."
+                },
+
+                {
+                    "id": 2,
+                    "title": "How else do you take care of your staff?",
+                    "body": "We organize team building events, official recognition for high-quality work, and maintain a scholarship fund for employees' children. All vehicles, equipment, supplies, and uniforms are provided by the company, and we always maintain a respectful, professional, and inclusive work environment."
+                }
+    ]
+
+        },
+
+        {
+            "Header": "General wash/fold questions",
+            "questions": [
+                {
+                    "id": 0,
+                    "title": "How do you handle my clothes during the washing and drying process?",
+                    "body": "Our team follows best practices when handling your clothes, including separating lights from darks, using cold water for washing, and medium heat for drying."
+                },
+
+                {
+                    "id": 1,
+                    "title": "What detergent and dryer sheet options do I have?",
+                    "body": "You can choose between scented or hypoallergenic detergent, and opt for dryer sheets or go without them."
+                },
+
+                {
+                    "id": 2,
+                    "title": "Do I need to separate whites and colors?",
+                    "body": "No need to worry! We handle the sorting for all wash and fold laundry, ensuring your whites are never washed with colors."
+                },
+
+                {
+                    "id": 3,
+                    "title": "Who handles my laundry and organizes it in my home?",
+                    "body": "As your trusted maid service, our employees are the only ones who handle, clean, and organize your clothes, as well as enter your home for pick-up and putting away your clean laundry."
+                }
+            ]
+        },
+
+        {
+            "Header": "Pick up and delivery",
+            "questions": [
+                {
+                    "id": 0,
+                    "title": "Do I need to be home for pickup and delivery?",
+                    "body": "No, you don't need to be home. Our staff will use the same method to enter your home for pickup and delivery as we do for cleaning services."
+                },
+
+                {
+                    "id": 1,
+                    "title": "How can I get my laundry picked up and what are my ordering options?",
+                    "body": "You have three options, choose whichever is most convenient for you.\nAutomatic pick-up on your cleaning visit: For monthly subscribers, our housekeeping staff will look for your Pristine Clean laundry bag and take it with them when they finish cleaning your home.  The best part, it requires zero action on your part.  Set it, and forget it\nScan the QR code: Scan the code on your blue laundry bag and click \"Do my laundry.\" We'll be on our way ASAP.\nReply to the SMS reminder: Respond \"yes\" to the weekly SMS reminders, which we send out before we are scheduled to pass through your neighborhood."
+                },
+
+                {
+                    "id": 2,
+                    "title": "When will my laundry be returned to my home?",
+                    "body": "Same-day service: For orders submitted before 10am via QR code or SMS reply.\nNext-day service: For laundry collected by housekeeping staff when cleaning your home or orders submitted after 10am."
+                }
+            ]
+        },
+
+        {
+            "Header": "Hanging drawers and how we organize your clothes",
+            "questions": [
+                {
+                    "id": 0,
+                    "title": "How many hanging drawers do I get and what is the cost?",
+                    "body": "Each household member gets a free personal hanging drawer. While it may require extra effort and expense, we believe this ensures easy, stress-free access to your clothes without mixing them up with your loved ones."
+                },
+
+                {
+                    "id": 1,
+                    "title": "How do you organize my clothes when putting them away?",
+                    "body": "Our staff arranges your clothes in hanging drawers as follows:\n\nTop drawer: Underwear\nNext drawer: Socks\nNext drawer: Shirts\nNext drawer: Shorts\nLast drawer: Pants\n\nWe also sort garments by fabric and type (e.g., cotton vs. workout material for shirts, or white vs. black socks) for a convenient and enjoyable experience when your clean clothes are returned."
+                },
+
+                {
+                    "id": 2,
+                    "title": "What do I do if my closet is full and I have no room for Pristine Clean hanging drawers?",
+                    "body": "Ideally, we hang your personal drawers in your closet. However, if needed, let us know an alternative location or we can provide an over-the-door hanging rod to hang the drawers off your door."
                 }
             ]
         }
-
     ]
 }
 
