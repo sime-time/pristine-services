@@ -1,53 +1,139 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "halfmoon/css/halfmoon.min.css";
-import FAQuestions from '../assets/misc/Accordion.json';
-
-interface Props 
-{
-  Header: string;
-  question: string;
-  answer: string;
-}
-
-const { Header, question, answer } = Astro.props;
+const FAQuestions = '../assets/misc/Accordion.json';
+import { Sections } from '../assets/misc/Accordion.json';
 ---
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<div class="Accordion-Section">
+    {Sections.map((section) => (
 
-<div class="shadow Accordion">
+            <div class="Accordion-Header">
+                <h4>{section.Header}</h4>
+            </div>
 
-    <div class = "Accordion-Header">
-        <h4>{Header}</h4>
-    </div>
-
-    <div class="VStack">
-        <ul class = "Accordion-List-Questions">
-            <li class = "Accordion-Item">
-                <p>{question}</p>
-                <p>{answer}</p>
-            </li>
-        </ul>
-    </div>
+            <div class=" Accordion-List-Questions">
+                {section.questions.map((questionData) => (
+                    
+                    <div class="Accordion-Item shadow">
+                    <input type="checkbox" id={`${section.Header}-${questionData.id}`}>
+                    <label for={`${section.Header}-${questionData.id}`} class="Accordion-Question">
+                    <span>{questionData.title}</span>
+                    <span class="arrow"><i class="fa-solid fa-caret-right"></i></span>
+                    </label>
+                    <div class="Accordion-Answer">
+                    <p>{questionData.body}</p>
+                    </div>
+                    </div>
+                    
+                ))}
+            </div>
+    ))}
 </div>
 
 <style>
 
-  .VStack 
-  {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-    .Accordion 
+    .VStack 
     {
-        max-width: 400px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        border-radius: 15px;
-        overflow: hidden;
-        background-color: purple;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 
-  
+    .Accordion-Section   
+    {
+        padding: 0;
+        margin 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+
+/* Accordion Styles */
+.Accordion
+{
+    width: min(90vw, 500px);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+
+}
+
+input[type="checkbox"] 
+{
+    display: none;
+    appearnace: none;
+}
+
+/* Accordion Item Styles */
+.Accordion-Item 
+{
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 0.5em;
+
+}
+
+.Accordion-Item:not(:last-child)
+{
+    margin-bottom: 1em;
+    
+}
+
+.Accordion-Answer 
+{
+    color: var(--text-color);
+    font-size: 1em;
+    line-height: 1.8em;  
+}
+
+label
+{
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    color: var(--accent-color);
+    cursor: pointer;
+    font-weight: 500;
+    padding: 1em 0;
+}
+
+input[type="checkbox"] ~ label .arrow 
+{
+    display: inline-block;
+    transition: .25s;
+}
+
+input[type="checkbox"]:checked ~ label .arrow 
+{
+    transform: rotate(90deg);
+}
+
+input[type="checkbox"]:checked ~ label
+{
+    /*color: #fff;*/
+    /*background-color: var(--accent-color);*/
+}
+
+
+input[type="checkbox"] ~ .Accordion-Answer 
+{
+    max-height: 0;
+    overflow: hidden;
+    transition: .125s;
+}
+
+input[type="checkbox"]:checked ~ .Accordion-Answer 
+{
+    max-height: 100vh; 
+}
+
+
+
+
+
 </style>
+
