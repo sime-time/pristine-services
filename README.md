@@ -1,6 +1,6 @@
 # Pristine Clean Services Website 
 
-Full website on https://www.pristineclean.co
+Full website on https://www.pristineservices.co
 (Hosted on Digital Ocean) 
 
 ## 🚀 Project Structure
