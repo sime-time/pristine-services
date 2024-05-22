@@ -1,80 +1,78 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "halfmoon/css/halfmoon.min.css";
-import Card from "./Card.astro";
+import Card from "./card.astro";
 ---
-
 <section>
     <div class="Our-Process-Section">
         <div class="HStack">
-            <div class="VStack">
-                <p>
-                    Come see why Pristine Services is loved and trusted by
-                    homeowners like you.
-                </p>
+
+            <div class = "VStack">
+                
+                <p>Come see why Pristine Services is loved and trusted by homeowners like you.</p>
 
                 <a class="Quote-btn">Get an Instant Quote</a>
+
             </div>
 
-            <div class="VStack">
-                <div class="VGrid Container">
+            <div class = "VStack">
+                <div class = "VGrid Container">
+
                     <Card
-                        image="../src/assets/images/Satisfaction-Guarantee-Icon.svg"
-                        ,
-                        title="We never cancel. Ever."
-                        ,
-                        description="Cleaning is a commitment. If we were to cancel, we'd pay you $100. Guaranteed."
+                    image = "../src/assets/images/Satisfaction-Guarantee-Icon.svg",
+                    title = "We never cancel. Ever.", 
+                    description = "Cleaning is a commitment. If we were to cancel, we'd pay you $100. Guaranteed."
                     />
 
                     <Card
-                        image="../src/assets/images/Feedback-Icon.svg"
-                        ,
-                        title="Your happinness, guaranteed"
-                        ,
-                        description="We ask for feedback after each visit. If you're not 100% satisfied with our services, we will make it right."
+                    image = "../src/assets/images/Feedback-Icon.svg",
+                    title = "Your happinness, guaranteed", 
+                    description = "We ask for feedback after each visit. If you're not 100% satisfied with our services, we will make it right."
                     />
 
                     <Card
-                        image="../src/assets/images/Whos-Home-Icon.svg"
-                        ,
-                        title="Know who's in your home"
-                        ,
-                        description="Want the same cleaning team every time? We can make that happen, just let us know when you sign up for service."
+                    image = "../src/assets/images/Whos-Home-Icon.svg",
+                    title = "Know who's in your home", 
+                    description = "Want the same cleaning team every time? We can make that happen, just let us know when you sign up for service."
                     />
 
                     <Card
-                        image="../src/assets/images/quality-control.svg"
-                        ,
-                        title="Quality control"
-                        ,
-                        description="Our quality control inspectors follow behind our teams to make sure we deliver the sparkly results we promise."
+                    image = "../src/assets/images/quality-control.svg",
+                    title = "Quality control", 
+                    description = "Our quality control inspectors follow behind our teams to make sure we deliver the sparkly results we promise."
                     />
+
                 </div>
             </div>
+
         </div>
-    </div>
+    </div> 
 </section>
 
+
 <style>
-    .Container {
+    .Container
+    {
         background-color: white;
         border-radius: 1rem;
-        border: 2px solid var(--accent);
+        border: 2px solid var(--accent-color);
     }
-    p {
+    p 
+    {
         font-size: 1.5rem;
         text-align: center;
     }
 
-    a {
+    a 
+    {
         display: inline-block;
         padding: 1rem 2rem;
         border-radius: 0.5rem;
-        border: 2px solid var(--accent);
+        border: 2px solid var(--accent-color);
         box-sizing: border-box;
         cursor: pointer;
         background-color: white;
-        color: var(--accent);
+        color: var(--accent-color);
         text-decoration: none;
         font-weight: bold;
         font-size: 1.2rem;
@@ -82,32 +80,37 @@ import Card from "./Card.astro";
         transition: all 0.3s ease;
     }
 
-    a:hover {
-        background-color: var(--accent);
+    a:hover 
+    {
+        background-color: var(--accent-color);
         color: white;
-        border: 2px solid var(--accent);
+        border: 2px solid var(--accent-color);
     }
 
-    .VGrid {
+    .VGrid 
+    {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 0.5rem;
     }
 
-    .VStack {
+    .VStack 
+    {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .HStack {
+    .HStack 
+    {
         display: flex;
         flex-direction: row;
         justify-content: left;
         align-items: center;
     }
 
-    .ZStack {
+    .ZStack 
+    {
         position: relative;
     }
 </style>
