@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/cjs/NavDropdown.js';
 
 export default function Navigation() {
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-secondary">
+    <Navbar collapseOnSelect expand="lg" >
       <Container>
         <Navbar.Brand href="/">
           <img src="logo.svg" height="120" className="d-inline-block align-top" alt="Company logo" />

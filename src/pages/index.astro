@@ -1,70 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import OurProcess from "../components/OurProcess.astro"
-import Assurances from "../components/Assurances.astro"
+import OurProcess from "../components/OurProcess.astro";
+import Assurances from "../components/Assurances.astro";
+import FormCTA from "../components/FormCTA.jsx";
 ---
 
 <Layout title="Pristine Clean">
   <main>
-    <section class="bg-body-secondary">
-      <div class="container">
-        <h1 class="hero-title fw-bolder fst-italic">
-          Save Time.<br /> Reset Your Space.
-        </h1>
-        <div class="shadow hero-form">
-          <!-- BEDROOMS DROPDOWN -->
-          <select id="bedrooms" name="bedrooms" class="hero-select">
-            <option value="0" class="dropdown-item" selected>Studio</option>
-            <option value="1" class="dropdown-item">1 bedroom</option>
-            <option value="2" class="dropdown-item">2 bedroom</option>
-            <option value="3" class="dropdown-item">3 bedroom</option>
-            <option value="4" class="dropdown-item">4 bedroom</option>
-            <option value="5" class="dropdown-item">5 bedroom</option>
-          </select>
-          <!-- BATHROOMS DROPDOWN -->
-          <select id="bathrooms" name="bathrooms" class="hero-select">
-            <option value="1" selected>1 bathroom</option>
-            <option value="2">2 bathroom</option>
-            <option value="3">3 bathroom</option>
-            <option value="4">4 bathroom</option>
-            <option value="5">5 bathroom</option>
-          </select>
-          <!-- CLEAN TYPE DROPDOWN -->
-          <select id="clean-type" name="clean-type" class="hero-select">
-            <option value="standard" selected>Standard Clean</option>
-            <option value="deep">"The Works" Deep Clean</option>
-            <option value="move-in-out">Move-in/out Clean</option>
-            <option value="post-construction">Post Construction Clean</option>
-            <option value="airbnb-turnover">Airbnb Turnover</option>
-          </select>
-          <!-- BOOK NOW BUTTON -->
-          <button class="hero-select">Book Now</button>
-        </div>
-
-        <div class="Malik-Section">
-          <OurProcess/>
-          <Assurances/>
-        </div>
-        
-      </div>
-    </section>
+    <FormCTA client:load />
+    <div class="Malik-Section">
+      <OurProcess />
+      <Assurances />
+    </div>
   </main>
 </Layout>
-
-<style>
-  .hero-title {
-    font-size: 3rem;
-    padding-block: 2.5rem;
-  }
-  .hero-form {
-    display: flex;
-    flex-direction: row;
-  }
-  .hero-select {
-    padding: 1rem;
-    flex-grow: 1;
-  }
-  .hero-select > option {
-    background: white;
-  }
-</style>

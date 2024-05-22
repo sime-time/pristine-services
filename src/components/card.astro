@@ -11,7 +11,6 @@ interface Props {
 const { image, title, description } = Astro.props;
 ---
 
-
 <div class="shadow Info-Card">
   <div class="VStack">
     <div class="Card-Image">
@@ -33,11 +32,11 @@ const { image, title, description } = Astro.props;
   .Info-Card {
     display: flex;
     flex-direction: column;
-    color: var(--text-color);
+    color: var(--text);
     background-color: white;
     align-items: center;
     justify-content: center;
-   
+
     border-radius: var(--border-radius);
     margin: 50px;
     padding: 50px;
@@ -47,22 +46,20 @@ const { image, title, description } = Astro.props;
     width: auto;
   }
 
-  .work-card1 
-  {
+  .work-card1 {
     background: #fff;
     box-shadow: 0px 10px 36px rgba(18, 78, 120, 0.08);
     border-radius: 16px;
     padding: 30px 25px;
     text-align: center;
-}
+  }
 
-.work-card-icon 
-{
+  .work-card-icon {
     width: 72px;
     height: 72px;
     margin: 0 auto;
     margin-bottom: 30px;
-}
+  }
 
   .Card-Image {
     display: flex;

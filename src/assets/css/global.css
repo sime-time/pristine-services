@@ -1,28 +1,70 @@
-@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Nunito:700|Nunito%20Sans:400');
 
 :root {
   color-scheme: light;
+  --text: #270101;
+  --background: #fbfbfe;
 
-  /* typography */
-  --bs-body-font-family: "Asap", sans-serif;
-  --bold-weight: 800;
-  --color-text: #1f4b38;
-  --bs-font-size-base: 1rem;
-  --bs-font-size-sm: 0.75rem;
-  --bs-font-size-lg: 1.5rem;
+  /* use for main CTAs and buttons */
+  --primary: #515de6;
 
-  /* background */
-  --accent-color: #2a8f77;
-  --bs-body-bg: #f5f7fa;
+  /* use for less important buttons and info cards */
+  --secondary: #0ec0e0;
 
-  --border-radius: 1.25rem;
+  /* use for secondary backgrounds */
+  --accent: #b0e5e8;
+
+  --border-radius: 1.5rem;
 }
 
 body {
-  color: var(--color-text);
-  background-color: var(--bs-body-bg);
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+  color: var(--text);
+  background-color: var(--background);
 }
 
-.bg-body-secondary {
-  background-color: #daffef !important;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Nunito';
+  font-weight: 700;
+}
+
+html {
+  font-size: 16px;
+}
+
+/* 16px */
+
+h1 {
+  font-size: 4.210rem;
+  /* 67.36px */
+}
+
+h2 {
+  font-size: 3.158rem;
+  /* 50.56px */
+}
+
+h3 {
+  font-size: 2.369rem;
+  /* 37.92px */
+}
+
+h4 {
+  font-size: 1.777rem;
+  /* 28.48px */
+}
+
+h5 {
+  font-size: 1.333rem;
+  /* 21.28px */
+}
+
+small {
+  font-size: 0.750rem;
+  /* 12px */
 }
