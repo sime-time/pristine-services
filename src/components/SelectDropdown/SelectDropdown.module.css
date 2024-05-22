@@ -1,0 +1,33 @@
+.SelectTrigger {
+  padding: 8px 12px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.SelectPortal {
+  background-color: white;
+}
+
+.SelectContent {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.SelectContent[data-state='open'] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.SelectItem {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.SelectItem:hover {
+  background-color: #f0f0f0;
+}
