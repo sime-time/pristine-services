@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
+import { MdInfoOutline } from "react-icons/md";
 
 function FormCTA() {
 
@@ -28,14 +29,20 @@ function FormCTA() {
     { value: "airbnb-deep", label: "Airbnb Deluxe Deep Clean" },
   ];
 
+  const styles = {
+    control: (state) =>
+      'rounded-0'
+  }
+
   return (
     <div className="container">
       <h1 className="fs-1">Save Time.<br />Reset Your Space.</h1>
-      <div className="d-flex justify-content-start">
-        <div className="flex-fill"><Select options={bedrooms} defaultValue={bedrooms[0]} /></div>
-        <div className="flex-fill"><Select options={bathrooms} defaultValue={bathrooms[0]} /></div>
-        <div className="flex-fill"><Select options={cleantypes} defaultValue={cleantypes[0]} /></div>
-        <button className="btn btn-primary btn-lg flex-fill" type="submit">Book Now</button>
+      <a href="" className="text-secondary text-opacity-50 d-none d-md-block"><span><MdInfoOutline /></span> Discover which cleaning type is right for you </a>
+      <div className="d-flex justify-content-start align-items-center shadow flex-wrap">
+        <div className="flex-fill w-25"><Select options={bedrooms} defaultValue={bedrooms[0]} classNames={styles} /></div>
+        <div className="flex-fill w-25"><Select options={bathrooms} defaultValue={bathrooms[0]} classNames={styles} /></div>
+        <div className="flex-fill w-25 d-none d-md-block"><Select options={cleantypes} defaultValue={cleantypes[0]} classNames={styles} /></div>
+        <button className="btn btn-primary btn-lg flex-fill rounded-0 w-100 w-md-auto" type="submit">Book Now</button>
       </div>
     </div>
   );
