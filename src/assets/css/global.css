@@ -23,3 +23,17 @@ body {
   color: var(--text);
   background-color: var(--background);
 }
+
+.fs-cta {
+  font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+  .mt-sm {
+    margin-top: 25px;
+  }
+
+  .fs-cta {
+    font-size: 2.5rem;
+  }
+}
