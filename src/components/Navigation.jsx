@@ -18,10 +18,7 @@ export default function Navigation() {
           <Nav>
             <Nav.Link href="/">Home</Nav.Link>
             <NavDropdown title="Services" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="/residential">Residential</NavDropdown.Item>
-              <NavDropdown.Item href="/commercial">Commercial</NavDropdown.Item>
-              <NavDropdown.Item href="/airbnb">Airbnb</NavDropdown.Item>
-              <NavDropdown.Divider />
+              <NavDropdown.Item href="/cleantypes">Clean Types</NavDropdown.Item>
               <NavDropdown.Item href="/checklist">Cleaning Checklist</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/about">About</Nav.Link>
