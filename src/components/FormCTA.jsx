@@ -34,7 +34,7 @@ function FormCTA() {
 
   return (
     <div className="container d-flex gap-4 flex-column">
-      <h1 className="fw-bold fs-cta my-3">Save Time.<br />Reset Your Space.</h1>
+      <h1 className="fw-bold fs-cta my-4">Save Time.<br />Reset Your Space.</h1>
       <div className="d-none d-md-block">
         <a href="/cleantypes" className="text-secondary text-opacity-50"><span><MdInfoOutline /></span> Discover which clean type is right for you </a>
       </div>
