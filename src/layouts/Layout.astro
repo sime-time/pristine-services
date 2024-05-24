@@ -1,9 +1,8 @@
 ---
 import Footer from "./Footer.astro";
 import Header from "./Header.astro";
-import "@fontsource-variable/nunito-sans";
 import "halfmoon/css/halfmoon.min.css";
-import "../assets/css/global.css";
+import "@fontsource-variable/nunito-sans";
 
 interface Props {
   title: string;
@@ -31,3 +30,33 @@ const { title } = Astro.props;
     <Footer />
   </body>
 </html>
+
+<style is:global>
+  :root {
+    color-scheme: light;
+    --text: #270101;
+    --background: #fbfbfe;
+    --border-radius: 1.5rem;
+  }
+
+  body {
+    font-family: "Nunito Sans Variable", sans-serif;
+    font-weight: 400;
+    color: var(--text);
+    background-color: var(--background);
+  }
+
+  .fs-cta {
+    font-size: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    .mt-sm {
+      margin-top: 25px;
+    }
+
+    .fs-cta {
+      font-size: 2.5rem;
+    }
+  }
+</style>
