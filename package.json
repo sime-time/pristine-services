@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/react": "^3.3.2",
     "@floating-ui/react": "^0.26.16",
+    "@fontsource-variable/nunito-sans": "^5.0.14",
     "@fontsource/nunito-sans": "^5.0.13",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@radix-ui/react-navigation-menu": "^1.1.4",
