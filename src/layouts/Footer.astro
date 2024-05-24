@@ -1,14 +1,70 @@
 ---
 import FooterSection from "../components/FooterSection.jsx";
+
+const serviceLinks = [
+  { label: "Services", href: "/checklist" },
+  { label: "Residential", href: "/residential" },
+  { label: "Commercial", href: "/commercial" },
+  { label: "Airbnb", href: "/airbnb" },
+  { label: "Cleaning Checklist", href: "/checklist" },
+];
+
+const faqLinks = [
+  { label: "FAQ", href: "/faq" },
+  { label: "Billing and Pricing", href: "/faq" },
+  { label: "Appointments and Scheduling", href: "/faq" },
+  { label: "Home Access", href: "/faq" },
+  { label: "Our Staff", href: "/faq" },
+];
+
+const aboutLinks = [
+  { label: "About", href: "/about" },
+  { label: "Who We Are", href: "/about" },
+  { label: "Why Pristine", href: "/about" },
+];
+
+const contactLinks = [
+  { label: "Contact", href: "/contact" },
+  { label: "Commercial Quote", href: "/contact" },
+  { label: "317-513-8111", href: "tel:3175378111" },
+  {
+    label: "sales@pristineclean-indy.com",
+    href: "mailto:sales@pristineclean-indy.com",
+  },
+];
 ---
 
-<footer class="d-flex justify-content-center align-items-center">
-  <div class="d-flex">
-    <div class="d-flex"></div>
-    <FooterSection />
-    <FooterSection />
-    <FooterSection />
+<footer class="py-4 container border-top">
+  <div class="flex-responsive gap-5 justify-content-between w-100">
+    <a href="/">
+      <img src="logo.svg" height="100" alt="Company logo" />
+    </a>
+    <div class="flex-responsive w-100">
+      <FooterSection links={serviceLinks} />
+      <FooterSection links={aboutLinks} />
+      <FooterSection links={faqLinks} />
+      <FooterSection links={contactLinks} />
+    </div>
   </div>
-
-  <p>&copy; Pristine Clean Services 2024. All rights reserved.</p>
+  <div class="mt-5 d-flex justify-content-center align-items-center">
+    <p>&copy; Pristine Clean Services 2024. All rights reserved.</p>
+  </div>
 </footer>
+
+<style>
+  .flex-responsive {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  @media (max-width: 768px) {
+    .flex-responsive {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.25rem;
+      align-items: center;
+    }
+  }
+</style>

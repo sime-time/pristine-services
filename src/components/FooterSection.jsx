@@ -1,6 +1,14 @@
-function FooterSection() {
+import Nav from 'react-bootstrap/cjs/Nav.js'
+
+function FooterSection({ links }) {
   return (
-    <div></div>
+    <Nav className="flex-column">
+      {links.map((link, index) =>
+        <Nav.Link href={link.href} key={index} className={`${index === 0 ? 'fw-bold fs-5' : 'd-none d-md-block'}`}>
+          {link.label}
+        </Nav.Link>
+      )}
+    </Nav>
   );
 }
 
