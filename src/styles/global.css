@@ -1,0 +1,19 @@
+:root {
+  color-scheme: light;
+  --text: #270101;
+  --background: #fbfbfe;
+  --border-radius: 1.5rem;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  color: var(--text);
+  background-color: var(--background);
+}
+
+@media (max-width: 768px) {
+  .mt-sm {
+    margin-top: 25px;
+  }
+}

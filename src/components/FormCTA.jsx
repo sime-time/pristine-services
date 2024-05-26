@@ -34,7 +34,7 @@ function FormCTA() {
 
   return (
     <div className="container d-flex gap-4 flex-column">
-      <h1 className="fw-bold fs-cta my-4">Save Time.<br />Reset Your Space.</h1>
+      <h1 className="fw-bold display-2 my-4">Save Time.<br />Reset Your Space.</h1>
       <div className="d-none d-md-block">
         <a href="/cleantypes" className="text-secondary text-opacity-50"><span><MdInfoOutline /></span> Discover which clean type is right for you </a>
       </div>
@@ -42,7 +42,7 @@ function FormCTA() {
         <div className="shadow flex-fill w-25 d-none d-md-block"><Select options={cleantypes} defaultValue={cleantypes[0]} classNames={styles} /></div>
         <div className="shadow flex-fill w-25"><Select options={bedrooms} defaultValue={bedrooms[0]} classNames={styles} /></div>
         <div className="shadow flex-fill w-25"><Select options={bathrooms} defaultValue={bathrooms[0]} classNames={styles} /></div>
-        <button className="shadow btn btn-primary btn-lg flex-fill rounded-0 w-100 w-md-auto mt-sm py-3 border-0" type="submit">Book Now</button>
+        <a href="/booking" className="shadow btn btn-primary btn-lg flex-fill rounded-0 w-100 w-md-auto mt-sm py-3 border-0" type="submit">Book Now</a>
       </div>
     </div>
   );
