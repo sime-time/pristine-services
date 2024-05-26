@@ -2,7 +2,7 @@
 import Footer from "./Footer.astro";
 import Header from "./Header.astro";
 import "halfmoon/css/halfmoon.min.css";
-import "@fontsource/nunito-sans";
+import "../assets/css/fonts.css";
 
 interface Props {
   title: string;
@@ -40,7 +40,7 @@ const { title } = Astro.props;
   }
 
   body {
-    font-family: "Nunito Sans Variable", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
     color: var(--text);
     background-color: var(--background);
