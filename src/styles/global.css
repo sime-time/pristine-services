@@ -1,19 +1,39 @@
 :root {
   color-scheme: light;
-  --text: #270101;
-  --background: #fbfbfe;
   --border-radius: 1.5rem;
+  --text: hsl(150, 88%, 7%);
+  --background: hsl(0, 100%, 99%);
+  --primary: hsl(202, 100, 61%);
+  --secondary: hsl(187, 88%, 75%);
+  --accent: hsl(195, 88%, 65%);
+  /* primary color 
+  --bs-blue-hue: ;
+  --bs-blue-staturation: ; */
+
+  /* secondary color 
+  --bs-gray-hue: 202;
+  --bs-gray-saturation: 100%; */
+
 }
 
 body {
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 400;
+  --bs-body-font-family: "Nunito Sans", sans-serif !important;
   color: var(--text);
   background-color: var(--background);
+
+}
+
+.form-container {
+  max-width: 1000px;
+  margin: auto;
 }
 
 @media (max-width: 768px) {
   .mt-sm {
     margin-top: 25px;
+  }
+
+  .form-container {
+    max-width: 600px;
   }
 }
