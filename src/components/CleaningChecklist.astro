@@ -2,48 +2,6 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Pristine Services">
-    <main>
-        <div class="container">
-            <h1>Cleaning Checklist</h1>
-
-            <html lang="en">
-                <head>
-                    <meta charset="UTF-8" />
-                    <meta
-                        name="viewport"
-                        content="width=device-width, initial-scale=1.0"
-                    />
-                    <title>Cleaning Checklist</title>
-                    <style>
-                        body {
-                            font-family: Arial, sans-serif;
-                        }
-                        .checklist-container {
-                            width: 80%;
-                            margin: 20px auto;
-                            border-collapse: collapse;
-                        }
-                        .checklist-container th,
-                        .checklist-container td {
-                            border: 1px solid #ddd;
-                            padding: 8px;
-                            text-align: left;
-                        }
-                        .checklist-container th {
-                            background-color: var(--accent);
-                            color: white;
-                        }
-                        .checkmark {
-                            color: green;
-                            font-weight: bold;
-                        }
-                        .cross {
-                            color: red;
-                            font-weight: bold;
-                        }
-                    </style>
-                </head>
                 <body>
                     <h2>What We Clean</h2>
                     <table class="checklist-container">
@@ -195,4 +153,32 @@ import Layout from "../layouts/Layout.astro";
             </html>
         </div>
     </main>
-</Layout>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .checklist-container {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+    .checklist-container th,
+    .checklist-container td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    .checklist-container th {
+        background-color: var(--accent);
+        color: white;
+    }
+    .checkmark {
+        color: green;
+        font-weight: bold;
+    }
+    .cross {
+        color: red;
+        font-weight: bold;
+    }
+</style>
