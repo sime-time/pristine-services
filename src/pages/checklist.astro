@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import CleaningChecklist from "../components/CleaningChecklist.astro";
+import CleaningChecklist from "../components/CleaningChecklist.jsx";
 ---
 
 <Layout title="Pristine Services">
@@ -8,7 +8,7 @@ import CleaningChecklist from "../components/CleaningChecklist.astro";
         <div class="container">
             <h1>Cleaning Checklist</h1>
 
-            <CleaningChecklist />
+            <CleaningChecklist client:load />
         </div>
     </main>
 </Layout>
