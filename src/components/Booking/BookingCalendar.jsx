@@ -1,6 +1,6 @@
 import { Button, Calendar, CalendarCell, CalendarGrid, CalendarHeaderCell, Heading } from 'react-aria-components';
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
-import BookingNextButton from './BookingNextButton';
+import BookingNextButton from '../Booking/BookingNextButton';
 import { today } from '@internationalized/date';
 function BookingCalendar() {
   const currentDate = today();

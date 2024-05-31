@@ -12,7 +12,7 @@ function BookingFrequency() {
         <div>
           <label className="form-label h6">FREQUENCY</label>
           <div className="row border border-primary">
-            <BookingRadio name="frequency" id="one-time" label="One Time" />
+            <BookingRadio name="frequency" id="one-time" label="Once" />
             <BookingRadio name="frequency" id="weekly" label="Weekly" />
             <BookingRadio name="frequency" id="biweekly" label="Biweekly" />
             <BookingRadio name="frequency" id="monthly" label="Monthly" />

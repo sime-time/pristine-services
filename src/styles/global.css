@@ -1,8 +1,9 @@
 :root {
   color-scheme: light;
   --border-radius: 1.5rem;
-  --text: hsl(150, 88%, 7%);
   --background: hsl(0, 100%, 99%);
+  --text: hsl(150, 88%, 7%);
+  --bs-body-font-family: "Mulish", sans-serif !important;
   /* primary color 
   --bs-blue-hue: ;
   --bs-blue-staturation: ; */
@@ -14,19 +15,11 @@
 }
 
 body {
-  --bs-body-font-family: "Nunito Sans", sans-serif !important;
   color: var(--text);
   background-color: var(--background);
-
-}
-
-.form-container {
-  max-width: 1000px;
-  margin: auto;
 }
 
 /* CALENDAR */
-
 .react-aria-CalendarGridHeader {
   text-align: center;
 }
@@ -37,6 +30,7 @@ body {
   outline: 2px solid var(--bs-primary);
   padding: 1rem;
   font-weight: bold;
+  cursor: default;
 
   &[data-outside-month] {
     display: none;
@@ -62,7 +56,14 @@ body {
   }
 }
 
+.form-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
 @media (max-width: 768px) {
+
+  /* for 'book now' button */
   .mt-sm {
     margin-top: 25px;
   }

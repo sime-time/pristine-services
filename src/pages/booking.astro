@@ -1,14 +1,8 @@
 ---
 import BookingLayout from "../layouts/BookingLayout.astro";
-import BookingType from "../components/BookingType.jsx";
-import BookingFrequency from "../components/BookingFrequency.jsx";
-import BookingCalendar from "../components/BookingCalendar.jsx";
+import BookingFlow from "../components/Booking/BookingFlow.jsx";
 ---
 
 <BookingLayout>
-  <main>
-    <BookingType />
-    <BookingFrequency />
-    <BookingCalendar client:load />
-  </main>
+  <BookingFlow client:load />
 </BookingLayout>

@@ -4,7 +4,7 @@ import BookingNextButton from "./BookingNextButton.jsx";
 function BookingType() {
 
   return (
-    <div className="form-container my-4">
+    <div className="form-container my-5">
       <h1 className="d-flex justify-content-center align-items-center display-5">Book your cleaning now</h1>
       <form className="mx-4 d-flex flex-column gap-5 mt-5">
         <div>
