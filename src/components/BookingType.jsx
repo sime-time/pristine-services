@@ -1,4 +1,5 @@
 import BookingRadio from "./BookingRadio.jsx";
+import BookingNextButton from "./BookingNextButton.jsx";
 
 function BookingType() {
 
@@ -38,7 +39,7 @@ function BookingType() {
           </div>
         </div>
 
-        <button className="btn btn-primary btn-lg rounded-0 py-3 w-50 align-self-center">Next</button>
+        <BookingNextButton />
       </form>
     </div>
   );

@@ -1,3 +1,4 @@
+import BookingNextButton from "./BookingNextButton.jsx";
 import BookingRadio from "./BookingRadio.jsx";
 
 function BookingFrequency() {
@@ -17,6 +18,7 @@ function BookingFrequency() {
             <BookingRadio name="frequency" id="monthly" label="Monthly" />
           </div>
         </div>
+        <BookingNextButton />
       </form>
     </div>
   );

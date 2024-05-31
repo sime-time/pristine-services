@@ -3,9 +3,6 @@
   --border-radius: 1.5rem;
   --text: hsl(150, 88%, 7%);
   --background: hsl(0, 100%, 99%);
-  --primary: hsl(202, 100, 61%);
-  --secondary: hsl(187, 88%, 75%);
-  --accent: hsl(195, 88%, 65%);
   /* primary color 
   --bs-blue-hue: ;
   --bs-blue-staturation: ; */
@@ -26,6 +23,43 @@ body {
 .form-container {
   max-width: 1000px;
   margin: auto;
+}
+
+/* CALENDAR */
+
+.react-aria-CalendarGridHeader {
+  text-align: center;
+}
+
+.react-aria-CalendarCell {
+  line-height: 2rem;
+  text-align: center;
+  outline: 2px solid var(--bs-primary);
+  padding: 1rem;
+  font-weight: bold;
+
+  &[data-outside-month] {
+    display: none;
+  }
+
+  &[data-pressed] {
+    background: var(--bs-secondary);
+  }
+
+  &[data-focus-visible] {
+    outline: 2px solid var(--bs-info);
+    outline-offset: 2px;
+  }
+
+  &[data-selected] {
+    background: var(--bs-primary);
+    color: var(--bs-white);
+  }
+
+  &[data-disabled] {
+    background: var(--bs-form-disabled-bg);
+    color: var(--bs-form-disabled-color);
+  }
 }
 
 @media (max-width: 768px) {
