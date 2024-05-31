@@ -19,7 +19,6 @@ function CleaningChecklist() {
           </Nav.Link>
         </Nav.Item>
       </Nav>
-      <h1>Table</h1>
     </>
   );
 }
