@@ -1,11 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import CleanTypeTabs from "../components/CleanTypeTabs.jsx";
 ---
 
 <Layout title="Clean Types | Pristine Clean">
-  <main>
+  <main class="bg-primary-subtle">
     <div class="container">
-      <h1>Clean Types</h1>
+      <h1 class="display-2 text-center py-5">Choose your clean.</h1>
+      <CleanTypeTabs client:load />
     </div>
   </main>
 </Layout>
