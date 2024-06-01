@@ -36,7 +36,7 @@ function FormCTA() {
     <div className="container d-flex gap-4 flex-column">
       <h1 className="fw-bold display-2 my-4">Save Time.<br />Reset Your Space.</h1>
       <div className="d-none d-md-block">
-        <a href="/cleantypes" className="text-secondary text-opacity-50"><span><MdInfoOutline /></span> Discover which clean type is right for you </a>
+        <a href="/cleantypes" className="text-secondary text-opacity-75"><span><MdInfoOutline /></span> Discover which clean type is right for you </a>
       </div>
       <div className="d-flex justify-content-start align-items-center flex-wrap">
         <div className="shadow flex-fill w-25 d-none d-md-block"><Select options={cleantypes} defaultValue={cleantypes[0]} classNames={styles} /></div>

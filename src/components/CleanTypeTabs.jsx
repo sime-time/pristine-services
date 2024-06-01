@@ -1,31 +1,24 @@
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import CleanTypeCard from './CleanTypeCard.jsx';
 
 function CleanTypeTabs() {
   return (
     <Tabs
       defaultActiveKey="residential"
       id="clean-type-tabs"
+      variant='pills'
+      className='fs-4'
       justify
     >
-      <Tab eventKey="residential" title="Residential" className="d-flex flex-column align-items-center">
-        <div className="card m-5 w-md-50">
-          <div className="card-body d-flex justify-content-around px-0 py-4">
-            <div className="d-flex flex-column justify-content-between">
-              <h2 className="card-title">Standard Clean</h2>
-              <div><a href="/booking" className="btn btn-primary btn-lg">Book Now</a></div>
-            </div>
-            <div className="d-flex flex-column">
-              <ul>
-                <li><a href="/checklist">See our cleaning checklist</a></li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
+      <Tab eventKey="residential" title="Residential" className="py-4">
+        <CleanTypeCard title="Standard Clean" btnLabel="Book Now" btnHref={"/booking"} />
       </Tab>
-      <Tab eventKey="commercial" title="Commercial">
-        <h1>Comm</h1>
+      <Tab eventKey="commercial" title="Commercial" className="py-4">
+        <CleanTypeCard title="Commercial Clean" btnLabel="Get Quote" btnHref={"/contact"} />
+      </Tab>
+      <Tab eventKey="airbnb" title="Airbnb" className="py-4">
+        <CleanTypeCard title="Airbnb Turnover" btnLabel="Book Now" btnHref={"/booking"} />
       </Tab>
     </Tabs>
   );
