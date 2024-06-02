@@ -14,7 +14,7 @@ function UncontrolledExample() {
       <Tab eventKey="profile" title="Profile">
         Tab content for Profile
       </Tab>
-      <Tab eventKey="contact" title="Contact" disabled>
+      <Tab client:load eventKey="contact" title="Contact" disabled>
         Tab content for Contact
       </Tab>
     </Tabs>
