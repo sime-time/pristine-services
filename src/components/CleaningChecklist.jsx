@@ -2,6 +2,34 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
 function FillExample() {
+  const containerStyle = {
+    width: '80%',
+    margin: '20px auto',
+    borderCollapse: 'collapse',
+  };
+
+  const thTdStyle = {
+    border: '1px solid #ddd',
+    padding: '8px',
+    textAlign: 'left',
+  };
+
+  const thStyle = {
+    ...thTdStyle,
+    backgroundColor: 'var(--accent)',
+    color: 'white',
+  };
+
+  const checkmarkStyle = {
+    color: 'green',
+    fontWeight: 'bold',
+  };
+
+  const crossStyle = {
+    color: 'red',
+    fontWeight: 'bold',
+  };
+
   return (
     <Tabs
       defaultActiveKey="profile"
@@ -10,122 +38,57 @@ function FillExample() {
       fill
     >
       <Tab eventKey="home" title="Home">
-      <body>
-    <h2>What We Clean</h2>
-    <table class="checklist-container">
-        <thead>
-            <tr>
-                <th>Kitchen</th>
-                <th>Bathrooms</th>
-                <th>Bedrooms</th>
-                <th>Common Areas/Other</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Remove cobwebs <span class="checkmark">&#10003;</span></td>
-                <td>Remove cobwebs <span class="checkmark">&#10003;</span></td>
-                <td>Remove cobwebs <span class="checkmark">&#10003;</span></td>
-                <td>Remove cobwebs <span class="checkmark">&#10003;</span></td>
-            </tr>
-            <tr>
-                <td
-                    >Dust light fixtures <span class="checkmark">&#10003;</span
-                    ></td
-                >
-                <td
-                    >Dust light fixtures <span class="checkmark">&#10003;</span
-                    ></td
-                >
-                <td
-                    >Dust light fixtures <span class="checkmark">&#10003;</span
-                    ></td
-                >
-                <td
-                    >Dust light fixtures <span class="checkmark">&#10003;</span
-                    ></td
-                >
-            </tr>
-            <tr>
-                <td>Dust baseboards <span class="checkmark">&#10003;</span></td>
-                <td>Clean mirrors <span class="checkmark">&#10003;</span></td>
-                <td>Dust baseboards <span class="checkmark">&#10003;</span></td>
-                <td>Dust baseboards <span class="checkmark">&#10003;</span></td>
-            </tr>
-            <tr>
-                <td
-                    >Clean appliance exteriors <span class="checkmark"
-                        >&#10003;</span
-                    ></td
-                >
-                <td
-                    >Clean sink & faucets <span class="checkmark">&#10003;</span
-                    ></td
-                >
-                <td>Make beds <span class="checkmark">&#10003;</span></td>
-                <td>Clean mirrors <span class="checkmark">&#10003;</span></td>
-            </tr>
-            <tr>
-                <td
-                    >Clean cabinet exteriors <span class="checkmark"
-                        >&#10003;</span
-                    ></td
-                >
-                <td
-                    >Clean cabinet exteriors <span class="cross">&#10007;</span
-                    ></td
-                >
-                <td>Clean floors <span class="checkmark">&#10003;</span></td>
-                <td
-                    >Clean windowsills <span class="checkmark">&#10003;</span
-                    ></td
-                >
-            </tr>
-            <tr>
-                <td
-                    >Clean countertops <span class="checkmark">&#10003;</span
-                    ></td
-                >
-                <td
-                    >Clean countertops <span class="checkmark">&#10003;</span
-                    ></td
-                >
-                <td>Empty trash <span class="checkmark">&#10003;</span></td>
-                <td>Empty trash <span class="checkmark">&#10003;</span></td>
-            </tr>
-        </tbody>
-    </table>
-</body>
-
-<style>
-    body {
-        font-family: Arial, sans-serif;
-    }
-    .checklist-container {
-        width: 80%;
-        margin: 20px auto;
-        border-collapse: collapse;
-    }
-    .checklist-container th,
-    .checklist-container td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: left;
-    }
-    .checklist-container th {
-        background-color: var(--accent);
-        color: white;
-    }
-    .checkmark {
-        color: green;
-        font-weight: bold;
-    }
-    .cross {
-        color: red;
-        font-weight: bold;
-    }
-</style>
-
+        <div>
+          <h2>What We Clean</h2>
+          <table style={containerStyle}>
+            <thead>
+              <tr>
+                <th style={thStyle}>Kitchen</th>
+                <th style={thStyle}>Bathrooms</th>
+                <th style={thStyle}>Bedrooms</th>
+                <th style={thStyle}>Common Areas/Other</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style={thTdStyle}>Remove cobwebs <span style={checkmarkStyle}>&#10003;</span></td>
+                <td style={thTdStyle}>Remove cobwebs <span style={checkmarkStyle}>&#10003;</span></td>
+                <td style={thTdStyle}>Remove cobwebs <span style={checkmarkStyle}>&#10003;</span></td>
+                <td style={thTdStyle}>Remove cobwebs <span style={checkmarkStyle}>&#10003;</span></td>
+              </tr>
+              <tr>
+                <td style={thTdStyle}>Dust light fixtures <span style={checkmarkStyle}>&#10003;</span></td>
+                <td style={thTdStyle}>Dust light fixtures <span style={checkmarkStyle}>&#10003;</span></td>
+                <td style={thTdStyle}>Dust light fixtures <span style={checkmarkStyle}>&#10003;</span></td>
+                <td style={thTdStyle}>Dust light fixtures <span style={checkmarkStyle}>&#10003;</span></td>
+              </tr>
+              <tr>
+                <td style={thTdStyle}>Dust baseboards <span style={checkmarkStyle}>&#10003;</span></td>
+                <td style={thTdStyle}>Clean mirrors <span style={checkmarkStyle}>&#10003;</span></td>
+                <td style={thTdStyle}>Dust baseboards <span style={checkmarkStyle}>&#10003;</span></td>
+                <td style={thTdStyle}>Dust baseboards <span style={checkmarkStyle}>&#10003;</span></td>
+              </tr>
+              <tr>
+                <td style={thTdStyle}>Clean appliance exteriors <span style={checkmarkStyle}>&#10003;</span></td>
+                <td style={thTdStyle}>Clean sink & faucets <span style={checkmarkStyle}>&#10003;</span></td>
+                <td style={thTdStyle}>Make beds <span style={checkmarkStyle}>&#10003;</span></td>
+                <td style={thTdStyle}>Clean mirrors <span style={checkmarkStyle}>&#10003;</span></td>
+              </tr>
+              <tr>
+                <td style={thTdStyle}>Clean cabinet exteriors <span style={checkmarkStyle}>&#10003;</span></td>
+                <td style={thTdStyle}>Clean cabinet exteriors <span style={crossStyle}>&#10007;</span></td>
+                <td style={thTdStyle}>Clean floors <span style={checkmarkStyle}>&#10003;</span></td>
+                <td style={thTdStyle}>Clean windowsills <span style={checkmarkStyle}>&#10003;</span></td>
+              </tr>
+              <tr>
+                <td style={thTdStyle}>Clean countertops <span style={checkmarkStyle}>&#10003;</span></td>
+                <td style={thTdStyle}>Clean countertops <span style={checkmarkStyle}>&#10003;</span></td>
+                <td style={thTdStyle}>Empty trash <span style={checkmarkStyle}>&#10003;</span></td>
+                <td style={thTdStyle}>Empty trash <span style={checkmarkStyle}>&#10003;</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </Tab>
       <Tab eventKey="profile" title="Profile">
         Tab content for Profile
