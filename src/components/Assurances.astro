@@ -10,13 +10,15 @@ import { AssuranceArray } from '../assets/misc/Assurances.json';
         <div class="row g-3 justify-content-evenly">
 
             <div class = "col-4">
-                
-                <p>Come see why Pristine Services is loved and trusted by homeowners like you.</p>
-
-                <a class="Quote-btn">Get an Instant Quote</a>
+                <div class = "row justify-content-center ">
+                    <div class = "col-6 offset-md-4">
+                        <p>Come see why Pristine Services is loved and trusted by homeowners like you.</p>
+                        <a class="Quote-btn">Get an Instant Quote</a>  
+                    </div>
+                </div>
             </div>
 
-            <div class = "container">
+            <div class = "col-8">
                 <div class = "row row-cols-2 mb-3">
                     {AssuranceArray.map((assurance) => (
                         <div class ="col">
@@ -29,6 +31,7 @@ import { AssuranceArray } from '../assets/misc/Assurances.json';
                     ))}
                 </div>
             </div>
+
         </div>
     </div>
 </section>
@@ -50,7 +53,8 @@ import { AssuranceArray } from '../assets/misc/Assurances.json';
         text-align: center;
     }
 
-    a {
+    a 
+    {
         display: inline-block;
         padding: 1rem 2rem;
         border-radius: 0.5rem;
