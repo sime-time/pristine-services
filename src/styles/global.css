@@ -72,3 +72,34 @@ body {
     max-width: 600px;
   }
 }
+
+
+
+
+.checklist-container {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.checklist-container th,
+.checklist-container td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.checklist-container th {
+  background-color: var(--accent, #007bff);
+  color: white;
+}
+
+.checkmark {
+  color: green;
+  font-weight: bold;
+}
+
+.cross {
+  color: red;
+  font-weight: bold;
+}

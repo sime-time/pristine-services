@@ -1,6 +1,8 @@
 import Tab from 'react-bootstrap/cjs/Tab.js';
 import Tabs from 'react-bootstrap/cjs/Tabs.js';
 
+import '../styles/global.css'; // Assuming this file contains your global styles
+
 function FillExample() {
   const containerStyle = {
     width: '80%',
