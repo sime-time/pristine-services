@@ -4,6 +4,7 @@ import "halfmoon/css/halfmoon.min.css";
 import Card from "../components/Card.astro";
 import { AssuranceArray } from '../assets/misc/Assurances.json';
 ---
+
 <section>
     <div class="Our-Process-Section container">
         <div class="row g-3 justify-content-evenly">
@@ -13,7 +14,6 @@ import { AssuranceArray } from '../assets/misc/Assurances.json';
                 <p>Come see why Pristine Services is loved and trusted by homeowners like you.</p>
 
                 <a class="Quote-btn">Get an Instant Quote</a>
-
             </div>
 
             <div class = "container">
@@ -29,11 +29,9 @@ import { AssuranceArray } from '../assets/misc/Assurances.json';
                     ))}
                 </div>
             </div>
-
         </div>
-    </div> 
+    </div>
 </section>
-
 
 <style>
  
@@ -52,8 +50,7 @@ import { AssuranceArray } from '../assets/misc/Assurances.json';
         text-align: center;
     }
 
-    a 
-    {
+    a {
         display: inline-block;
         padding: 1rem 2rem;
         border-radius: 0.5rem;
@@ -69,8 +66,7 @@ import { AssuranceArray } from '../assets/misc/Assurances.json';
         transition: all 0.3s ease;
     }
 
-    a:hover 
-    {
+    a:hover {
         background-color: var(--accent-color);
         color: white;
         border: 2px solid var(--accent-color);

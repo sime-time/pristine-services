@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import CleaningChecklist from "../components/CleaningChecklist.astro";
+import CleaningChecklist from "../components/CleaningChecklist.jsx";
 import FormCTA from "../components/FormCTA.jsx";
 ---
 
@@ -9,11 +9,9 @@ import FormCTA from "../components/FormCTA.jsx";
         <div class="container">
             <h1>Cleaning Checklist</h1>
 
-            <CleaningChecklist />
+            <CleaningChecklist client:load />
 
-            <section class="bg-primary-subtle pb-5">
-              <FormCTA client:load />
-            </section>
+            <FormCTA client:load />
 
         </div>
     </main>

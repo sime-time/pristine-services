@@ -1,11 +1,9 @@
 :root {
   color-scheme: light;
   --border-radius: 1.5rem;
-  --text: hsl(150, 88%, 7%);
   --background: hsl(0, 100%, 99%);
-  --primary: hsl(202, 100, 61%);
-  --secondary: hsl(187, 88%, 75%);
-  --accent: hsl(195, 88%, 65%);
+  --text: hsl(150, 88%, 7%);
+  --bs-body-font-family: "Mulish", sans-serif !important;
   /* primary color 
   --bs-blue-hue: ;
   --bs-blue-staturation: ; */
@@ -17,10 +15,45 @@
 }
 
 body {
-  --bs-body-font-family: "Nunito Sans", sans-serif !important;
   color: var(--text);
   background-color: var(--background);
+}
 
+/* CALENDAR */
+.react-aria-CalendarGridHeader {
+  text-align: center;
+}
+
+.react-aria-CalendarCell {
+  line-height: 2rem;
+  text-align: center;
+  outline: 2px solid var(--bs-primary);
+  padding: 1rem;
+  font-weight: bold;
+  cursor: default;
+
+  &[data-outside-month] {
+    display: none;
+  }
+
+  &[data-pressed] {
+    background: var(--bs-secondary);
+  }
+
+  &[data-focus-visible] {
+    outline: 2px solid var(--bs-info);
+    outline-offset: 2px;
+  }
+
+  &[data-selected] {
+    background: var(--bs-primary);
+    color: var(--bs-white);
+  }
+
+  &[data-disabled] {
+    background: var(--bs-form-disabled-bg);
+    color: var(--bs-form-disabled-color);
+  }
 }
 
 .form-container {
@@ -29,6 +62,8 @@ body {
 }
 
 @media (max-width: 768px) {
+
+  /* for 'book now' button */
   .mt-sm {
     margin-top: 25px;
   }
