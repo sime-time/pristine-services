@@ -1,9 +1,10 @@
 ---
 import Card from "./Card.astro";
+import {ProcessArray} from "../assets/misc/Assurances.json";
 ---
 
 <main>
-    <div class="Our-Process-Section">
+    <div class="Our-Process-Section container">
         <div class="ZStack">
             <div class="VStack">
                 <h1>How It Works</h1>
@@ -14,43 +15,28 @@ import Card from "./Card.astro";
                     runing services.
                 </p>
 
-                <div class="HStack">
-                    <Card
-                        image="../src/assets/images/scope.svg"
-                        ,
-                        title="Get a Price."
-                        ,
-                        description="Tell us about you, your home, and your cleaning needs."
-                    />
-                    <Card
-                        image="../src/assets/images/calendar.svg"
-                        ,
-                        title="Book It."
-                        ,
-                        description="We'll make your home shine, and run any errands you'd like."
-                    />
-                    <Card
-                        image="../src/assets/images/house.svg"
-                        ,
-                        title="Breathe, smile, relax."
-                        ,
-                        description="The house is clean, the errands are done. Time to come home."
-                    />
+                <div class="row justify-content-evenly">
+                    {ProcessArray.map((process) => (
+                        <div class ="col">
+                        <Card
+                        image = {process.image},
+                        title = {process.title}, 
+                        description = {process.description}
+                        />
+                        </div>
+                    ))}
                 </div>
 
-                <a href="#" class="Learn-btn">Learn more about our services</a>
+                <div class="row">
+                <a href="#" class="Learn-btn col-md-6 offset-3">Learn more about our services</a>
+                </div>
+
             </div>
         </div>
     </div>
 </main>
 
 <style>
-    .Our-Process-Section {
-        padding-inline: 2rem;
-        justify-content: space-evenly;
-        align-items: center;
-        display: flex;
-    }
 
     p {
         font-size: 1.5rem;
@@ -80,25 +66,5 @@ import Card from "./Card.astro";
         border: 2px solid var(--accent);
     }
 
-    .VStack {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
 
-    .HStack {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .HStack > *:not(:first-child) {
-        margin-left: 2rem;
-    }
-
-    .ZStack {
-        position: relative;
-    }
 </style>

@@ -1,152 +1,35 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Info from "../assets/misc/Checklist.json";
+import "../styles/global.css";
+import "halfmoon/css/halfmoon.min.css";
 ---
 
                 <body>
                     <h2>What We Clean</h2>
-                    <table class="checklist-container">
+                    <table class="checklist-container table table-striped">
+
                         <thead>
+                            {Info["Checklist Info"].map((area) => (
+                                <tr>
+                                    <td scope="row">{area.Title}</td>
+                                </tr>
+
+                                
+
+                            ))}
                             <tr>
-                                <th>Kitchen</th>
-                                <th>Bathrooms</th>
-                                <th>Bedrooms</th>
-                                <th>Common Areas/Other</th>
+                                {Info["Cleaning Types"].map((type) => (
+                                    <th scope="row"> {type} </th>
+                                ))} 
+                              
+                              
+
                             </tr>
                         </thead>
+
                         <tbody>
-                            <tr>
-                                <td
-                                    >Remove cobwebs <span class="checkmark"
-                                        >&#10003;</span
-                                    ></td
-                                >
-                                <td
-                                    >Remove cobwebs <span class="checkmark"
-                                        >&#10003;</span
-                                    ></td
-                                >
-                                <td
-                                    >Remove cobwebs <span class="checkmark"
-                                        >&#10003;</span
-                                    ></td
-                                >
-                                <td
-                                    >Remove cobwebs <span class="checkmark"
-                                        >&#10003;</span
-                                    ></td
-                                >
-                            </tr>
-                            <tr>
-                                <td
-                                    >Dust light fixtures <span class="checkmark"
-                                        >&#10003;</span
-                                    ></td
-                                >
-                                <td
-                                    >Dust light fixtures <span class="checkmark"
-                                        >&#10003;</span
-                                    ></td
-                                >
-                                <td
-                                    >Dust light fixtures <span class="checkmark"
-                                        >&#10003;</span
-                                    ></td
-                                >
-                                <td
-                                    >Dust light fixtures <span class="checkmark"
-                                        >&#10003;</span
-                                    ></td
-                                >
-                            </tr>
-                            <tr>
-                                <td
-                                    >Dust baseboards <span class="checkmark"
-                                        >&#10003;</span
-                                    ></td
-                                >
-                                <td
-                                    >Clean mirrors <span class="checkmark"
-                                        >&#10003;</span
-                                    ></td
-                                >
-                                <td
-                                    >Dust baseboards <span class="checkmark"
-                                        >&#10003;</span
-                                    ></td
-                                >
-                                <td
-                                    >Dust baseboards <span class="checkmark"
-                                        >&#10003;</span
-                                    ></td
-                                >
-                            </tr>
-                            <tr>
-                                <td
-                                    >Clean appliance exteriors <span
-                                        class="checkmark">&#10003;</span
-                                    ></td
-                                >
-                                <td
-                                    >Clean sink & faucets <span
-                                        class="checkmark">&#10003;</span
-                                    ></td
-                                >
-                                <td
-                                    >Make beds <span class="checkmark"
-                                        >&#10003;</span
-                                    ></td
-                                >
-                                <td
-                                    >Clean mirrors <span class="checkmark"
-                                        >&#10003;</span
-                                    ></td
-                                >
-                            </tr>
-                            <tr>
-                                <td
-                                    >Clean cabinet exteriors <span
-                                        class="checkmark">&#10003;</span
-                                    ></td
-                                >
-                                <td
-                                    >Clean cabinet exteriors <span class="cross"
-                                        >&#10007;</span
-                                    ></td
-                                >
-                                <td
-                                    >Clean floors <span class="checkmark"
-                                        >&#10003;</span
-                                    ></td
-                                >
-                                <td
-                                    >Clean windowsills <span class="checkmark"
-                                        >&#10003;</span
-                                    ></td
-                                >
-                            </tr>
-                            <tr>
-                                <td
-                                    >Clean countertops <span class="checkmark"
-                                        >&#10003;</span
-                                    ></td
-                                >
-                                <td
-                                    >Clean countertops <span class="checkmark"
-                                        >&#10003;</span
-                                    ></td
-                                >
-                                <td
-                                    >Empty trash <span class="checkmark"
-                                        >&#10003;</span
-                                    ></td
-                                >
-                                <td
-                                    >Empty trash <span class="checkmark"
-                                        >&#10003;</span
-                                    ></td
-                                >
-                            </tr>
-                            <!-- Add more rows as necessary -->
+                            
                         </tbody>
                     </table>
                 </body>
@@ -155,29 +38,35 @@ import Layout from "../layouts/Layout.astro";
     </main>
 
 <style>
-    body {
+    body 
+    {
         font-family: Arial, sans-serif;
     }
-    .checklist-container {
+    .checklist-container 
+    {
         width: 80%;
         margin: 20px auto;
         border-collapse: collapse;
     }
     .checklist-container th,
-    .checklist-container td {
+    .checklist-container td 
+    {
         border: 1px solid #ddd;
         padding: 8px;
         text-align: left;
     }
-    .checklist-container th {
+    .checklist-container th 
+    {
         background-color: var(--accent);
         color: white;
     }
-    .checkmark {
+    .checkmark 
+    {
         color: green;
         font-weight: bold;
     }
-    .cross {
+    .cross 
+    {
         color: red;
         font-weight: bold;
     }

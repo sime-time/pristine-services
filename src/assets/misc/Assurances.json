@@ -1,0 +1,46 @@
+{
+    "ProcessArray": 
+    [
+        {
+            "image": "../src/assets/images/scope.svg",
+            "title": "Get a Price.",
+            "description": "Tell us about you, your home, and your cleaning needs."
+        },
+        
+        {
+            "image": "../src/assets/images/calendar.svg",
+            "title":"Book It.",
+            "description":"We'll make your home shine, and run any errands you'd like."
+        },
+
+        {
+            "image": "../src/assets/images/house.svg",
+            "title":"Breathe, smile, relax.",
+            "description":"The house is clean, the errands are done. Time to come home."
+        }
+    ],
+
+    "AssuranceArray": 
+    [
+        {
+            "image": "../src/assets/images/Satisfaction Guarantee Icon.svg",
+            "title": "We never cancel. Ever.",
+            "description": "Cleaning is a commitment. If we were to cancel, we'd pay you $100. Guaranteed."
+        },
+        {
+            "image": "../src/assets/images/Feedback Icon.png",
+            "title": "Your happinness, guaranteed",
+            "description": "We ask for feedback after each visit. If you're not 100% satisfied with our services, we will make it right."
+        },
+        {
+            "image": "../src/assets/images/Whos-Home-Icon.svg",
+            "title": "Know who's in your home",
+            "description": "Want the same cleaning team every time? We can make that happen, just let us know when you sign up for service."
+        },
+        {
+            "image": "../src/assets/images/Quality Control Icon.svg",
+            "title": "Quality control",
+            "description": "Our quality control inspectors follow behind our teams to make sure we deliver the sparkly results we promise."
+        }
+    ]
+}
