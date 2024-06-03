@@ -37,7 +37,7 @@ function FillExample() {
       className="mb-3"
       fill
     >
-      <Tab eventKey="home" title="Home">
+      <Tab eventKey="Kitchen" title="Kitchen">
         <div>
           <h2>What We Clean</h2>
           <table style={containerStyle}>
@@ -90,13 +90,13 @@ function FillExample() {
           </table>
         </div>
       </Tab>
-      <Tab eventKey="profile" title="Profile">
+      <Tab eventKey="Bathrooms" title="Bathrooms">
         Tab content for Profile
       </Tab>
-      <Tab eventKey="longer-tab" title="Loooonger Tab">
+      <Tab eventKey="Bedrooms" title="Bedrooms">
         Tab content for Loooonger Tab
       </Tab>
-      <Tab eventKey="contact" title="Contact" disabled>
+      <Tab eventKey="Common Areas/Garage" title="Common Areas/Garage">
         Tab content for Contact
       </Tab>
     </Tabs>
