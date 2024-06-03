@@ -1,5 +1,5 @@
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
+import Tab from 'react-bootstrap/cjs/Tab.js';
+import Tabs from 'react-bootstrap/cjs/Tabs.js';
 
 function FillExample() {
   const containerStyle = {
