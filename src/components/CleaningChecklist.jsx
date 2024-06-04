@@ -3,7 +3,7 @@ import Tabs from 'react-bootstrap/cjs/Tabs.js';
 
 import '../styles/global.css'; // Assuming this file contains your global styles
 
-function FillExample() {
+function CleaningChecklist() {
   const containerStyle = {
     width: '80%',
     margin: '20px auto',
@@ -105,4 +105,4 @@ function FillExample() {
   );
 }
 
-export default FillExample;
+export default CleaningChecklist;

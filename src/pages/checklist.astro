@@ -1,8 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import CleaningChecklist from "../components/CleaningChecklist.jsx";
-import CleaningChecklist2 from "../components/CleaningChecklist.astro";
-import FormCTA from "../components/FormCTA.jsx";
 ---
 
 <Layout title="Pristine Services">
@@ -10,15 +8,7 @@ import FormCTA from "../components/FormCTA.jsx";
         <div class="container">
             <h1>Cleaning Checklist</h1>
 
-            <CleaningChecklist2 />
-
             <CleaningChecklist client:load />
-
-            <section class="bg-primary-subtle">
-                <FormCTA client:load />
-            </section>
-            
-
         </div>
     </main>
 </Layout>
