@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "halfmoon/css/halfmoon.min.css";
-import Card from "../components/Card.astro";
+import Card from "./card.astro";
 import { AssuranceArray } from '../assets/misc/Assurances.json';
 ---
 
@@ -19,7 +19,7 @@ import { AssuranceArray } from '../assets/misc/Assurances.json';
             </div>
 
             <div class = "col-md-8">
-                <div class = "row  mb-3">
+                <div class = "row mb-3">
                     {AssuranceArray.map((assurance) => (
                         <div class ="col">
                         <Card
