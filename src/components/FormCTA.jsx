@@ -23,7 +23,7 @@ function FormCTA() {
   const cleantypes = [
     { value: "standard", label: "Standard Clean" },
     { value: "deep", label: '"The Works" Deep Clean' },
-    { value: "move-in-out", label: "Move in / out Clean" },
+    { value: "move-in-out", label: "Move In / Out Clean" },
     { value: "airbnb-turnover", label: "Airbnb Turnover" },
     { value: "airbnb-deep", label: "Airbnb Deluxe Deep Clean" },
   ];

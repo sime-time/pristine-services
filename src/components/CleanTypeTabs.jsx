@@ -64,7 +64,7 @@ function CleanTypeTabs() {
         <CleanTypeCard title="Move in/out Clean" btnLabel="Book Now" btnHref={"/booking"} description={moveList} />
       </Tab>
       <Tab eventKey="commercial" title="Commercial" className="py-4">
-        <CleanTypeCard title="Commercial Clean" btnLabel="Get Quote" btnHref={"/contact"} description={commercialList} />
+        <CleanTypeCard title="Commercial / Office Clean" btnLabel="Get Quote" btnHref={"/contact"} description={commercialList} />
         <CleanTypeCard title="Post-Construction Clean" btnLabel="Get Quote" btnHref={"/contact"} description={postConstructionList} />
       </Tab>
       <Tab eventKey="airbnb" title="Airbnb" className="py-4">
