@@ -1,6 +1,6 @@
 import Nav from 'react-bootstrap/cjs/Nav.js'
 
-function FooterSection({ links }) {
+function FooterNav({ links }) {
   return (
     <Nav className="flex-column">
       {links.map((link, index) =>
@@ -12,4 +12,4 @@ function FooterSection({ links }) {
   );
 }
 
-export default FooterSection; 
+export default FooterNav; 

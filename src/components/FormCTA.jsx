@@ -38,7 +38,7 @@ function FormCTA() {
       <div className="d-none d-md-block">
         <a href="/cleantypes" className="text-secondary text-opacity-75"><span><MdInfoOutline /></span> Discover which clean type is right for you </a>
       </div>
-      <div className="d-flex justify-content-start align-items-center flex-wrap">
+      <div className="d-flex justify-content-start align-items-center flex-wrap z-3">
         <div className="shadow flex-fill w-25 d-none d-md-block"><Select options={cleantypes} defaultValue={cleantypes[0]} classNames={styles} /></div>
         <div className="shadow flex-fill w-25"><Select options={bedrooms} defaultValue={bedrooms[0]} classNames={styles} /></div>
         <div className="shadow flex-fill w-25"><Select options={bathrooms} defaultValue={bathrooms[0]} classNames={styles} /></div>

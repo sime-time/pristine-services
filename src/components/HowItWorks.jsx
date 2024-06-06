@@ -24,7 +24,7 @@ function HowItWorks() {
   };
 
   return (
-    <section className="container d-flex flex-column align-items-center gap-5 my-5 py-3">
+    <section className="container d-flex flex-column align-items-center gap-5 my-5">
       <div className="text-center ">
         <h1 className="display-4" >How it works</h1>
         <h2 className="fw-normal">We'll clean your space at a time that works for you.</h2>

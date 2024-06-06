@@ -1,0 +1,99 @@
+<div class="logos border-top">
+  <h2 class="text-center fs-4 fst-italic fw-normal mb-4 mb-md-3">
+    Our Partners
+  </h2>
+  <div class="logos-slide">
+    <img src="./partners/coil-logo.webp" alt="The Coil" />
+    <img src="./partners/pmi-logo.png" alt="Property Management Inc" />
+    <img src="./partners/lennar-logo.webp" alt="Lennar" class="lennar-img" />
+    <img src="./partners/mcgraw-logo.webp" alt="McGraw Design and Build" />
+    <img src="./partners/airbnb-logo.webp" alt="Airbnb" class="airbnb-img" />
+  </div>
+  <div class="logos-slide">
+    <img src="./partners/coil-logo.webp" alt="The Coil" />
+    <img src="./partners/pmi-logo.png" alt="Property Management Inc" />
+    <img src="./partners/lennar-logo.webp" alt="Lennar" class="lennar-img" />
+    <img src="./partners/mcgraw-logo.webp" alt="McGraw Design and Build" />
+    <img src="./partners/airbnb-logo.webp" alt="Airbnb" class="airbnb-img" />
+  </div>
+</div>
+
+<style>
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .logos {
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+    position: relative;
+  }
+  @media (min-width: 1024px) {
+    .logos:before,
+    .logos:after {
+      position: absolute;
+      top: 0;
+      width: 200px;
+      height: 100%;
+      content: "";
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .logos:before {
+      left: 0;
+      background: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0),
+        var(--background)
+      );
+    }
+    .logos:after {
+      right: 0;
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0),
+        var(--background)
+      );
+    }
+    .logos:hover .logos-slide {
+    }
+  }
+
+  .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+
+  .lennar-img {
+    max-height: 20px;
+  }
+
+  .airbnb-img {
+    height: 75px;
+  }
+  img {
+    filter: grayscale(100%);
+    opacity: 50%;
+    height: 50px;
+    width: auto;
+    margin: 0 3em;
+    transition: all 0.5s ease;
+  }
+  img:hover {
+    filter: none;
+    opacity: 100%;
+  }
+  @media (max-width: 768px) {
+    img {
+      height: 40px;
+      margin: 0 1.5em;
+    }
+  }
+</style>

@@ -1,5 +1,5 @@
 ---
-import FooterSection from "../components/FooterSection.jsx";
+import FooterNav from "../components/FooterNav.jsx";
 
 const serviceLinks = [
   { label: "Services", href: "/cleantypes" },
@@ -38,10 +38,10 @@ const contactLinks = [
       <img src="logo.svg" height="100" alt="Company logo" />
     </a>
     <div class="flex-responsive w-100">
-      <FooterSection links={serviceLinks} />
-      <FooterSection links={aboutLinks} />
-      <FooterSection links={faqLinks} />
-      <FooterSection links={contactLinks} />
+      <FooterNav links={serviceLinks} />
+      <FooterNav links={aboutLinks} />
+      <FooterNav links={faqLinks} />
+      <FooterNav links={contactLinks} />
     </div>
   </div>
   <div class="mt-5 d-flex justify-content-center align-items-center">
