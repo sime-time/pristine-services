@@ -42,7 +42,7 @@ function FormCTA() {
         <div className="shadow flex-fill w-25 d-none d-md-block"><Select options={cleantypes} defaultValue={cleantypes[0]} classNames={styles} /></div>
         <div className="shadow flex-fill w-25"><Select options={bedrooms} defaultValue={bedrooms[0]} classNames={styles} /></div>
         <div className="shadow flex-fill w-25"><Select options={bathrooms} defaultValue={bathrooms[0]} classNames={styles} /></div>
-        <a href="/booking" className="shadow btn btn-primary btn-lg flex-fill rounded-0 w-100 w-md-auto mt-sm py-3 border-0" type="submit">Book Now</a>
+        <a href="/booking" className="shadow btn btn-primary btn-lg flex-fill rounded-0 w-100 w-md-auto cta-book-now py-3 border-0" type="submit">Book Now</a>
       </div>
     </div>
   );

@@ -67,8 +67,7 @@ body {
 
 @media (max-width: 768px) {
 
-  /* for 'book now' button */
-  .mt-sm {
+  .cta-book-now {
     margin-top: 25px;
   }
 
@@ -79,32 +78,4 @@ body {
   .card-arrow {
     transform: rotate(90deg);
   }
-}
-
-.checklist-container {
-  width: 80%;
-  margin: 20px auto;
-  border-collapse: collapse;
-}
-
-.checklist-container th,
-.checklist-container td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-}
-
-.checklist-container th {
-  background-color: var(--accent, #007bff);
-  color: white;
-}
-
-.checkmark {
-  color: green;
-  font-weight: bold;
-}
-
-.cross {
-  color: red;
-  font-weight: bold;
 }

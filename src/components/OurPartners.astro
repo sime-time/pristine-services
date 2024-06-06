@@ -3,7 +3,7 @@
 >
   <h2 class="fs-4 fst-italic fw-normal mb-5 mb-md-4">Our Partners</h2>
   <div
-    class="d-flex flex-column flex-md-row gap-5 justify-content-center align-items-center"
+    class="logo-slide d-flex flex-column flex-md-row gap-5 justify-content-center align-items-center"
   >
     <img src="./partners/coil-logo.webp" alt="The Coil" />
     <img src="./partners/pmi-logo.png" alt="Property Management Inc" />
@@ -22,6 +22,9 @@
 </div>
 
 <style>
+  .logo-slide {
+    white-space: nowrap;
+  }
   .lennar-img {
     max-height: 20px;
   }
@@ -38,5 +41,7 @@
   img:hover {
     filter: none;
     opacity: 100%;
+  }
+  @media (max-width: 768px) {
   }
 </style>
