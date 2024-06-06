@@ -1,10 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import OurProcess from "../components/OurProcess.astro";
-import Assurances from "../components/Assurances.astro";
 import FormCTA from "../components/FormCTA.jsx";
-import Reviews from "../components/Reviews.jsx";
 import OurPartners from "../components/OurPartners.astro";
+import HowItWorks from "../components/HowItWorks.jsx";
+import Assurances from "../components/Assurances.astro";
+import Reviews from "../components/Reviews.jsx";
 ---
 
 <Layout title="Pristine Clean">
@@ -12,13 +12,8 @@ import OurPartners from "../components/OurPartners.astro";
     <section class="bg-primary-subtle pb-5">
       <FormCTA client:load />
     </section>
-
     <OurPartners />
-
-    <OurProcess />
-
-    <Assurances />
-
+    <HowItWorks />
     <Reviews client:visible />
   </main>
 </Layout>

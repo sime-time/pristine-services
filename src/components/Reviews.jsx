@@ -3,9 +3,9 @@ import ReviewItem from './ReviewItem.jsx';
 
 function Reviews() {
   return (
-    <div className="container mb-5">
+    <div className="container my-5 py-3">
       <div className="d-flex flex-column align-items-center gap-4">
-        <h1>See what our customers say about us</h1>
+        <h1 className="display-4 text-center">Hear what others say about us</h1>
         <Carousel className="w-md-75">
           <Carousel.Item className="rounded-3 bg-primary-subtle h-100 p-5 fs-3 text-center">
             <ReviewItem reviewer="Bobby Hensley" review="I called on a tuesday afternoon strapped to find a last minute cleaner for after rehearsal, for my sisters beautfil wedding. THANK you to Pristine Clean team. Katie and her were on time and our studio space turn out spotless!" />

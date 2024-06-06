@@ -61,6 +61,10 @@ body {
   margin: auto;
 }
 
+.card-arrow {
+  transition: transform 0.3s;
+}
+
 @media (max-width: 768px) {
 
   /* for 'book now' button */
@@ -71,10 +75,11 @@ body {
   .form-container {
     max-width: 600px;
   }
+
+  .card-arrow {
+    transform: rotate(90deg);
+  }
 }
-
-
-
 
 .checklist-container {
   width: 80%;
