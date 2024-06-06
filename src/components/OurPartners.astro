@@ -1,0 +1,42 @@
+<div
+  class="container my-5 d-flex flex-column justify-content-center align-items-center"
+>
+  <h2 class="fs-4 opacity-75 mb-5">Our Partners</h2>
+  <div
+    class="d-flex flex-column flex-md-row gap-5 justify-content-center align-items-center"
+  >
+    <img src="./partners/coil-logo.webp" alt="The Coil" />
+    <img src="./partners/pmi-logo.png" alt="Property Management Inc" />
+    <img src="./partners/mcgraw-logo.webp" alt="McGraw Design and Build" />
+    <img
+      class="lennar-img"
+      src="./partners/lennar-logo.webp"
+      alt="Lennar Logo"
+    />
+    <img
+      class="airbnb-img"
+      src="./partners/airbnb-logo.webp"
+      alt="Airbnb Logo"
+    />
+  </div>
+</div>
+
+<style>
+  .lennar-img {
+    max-height: 20px;
+  }
+  .airbnb-img {
+    max-height: 80px;
+  }
+  img {
+    filter: grayscale(100%);
+    max-width: auto;
+    max-height: 50px;
+    opacity: 50%;
+    transition: all 0.5s ease;
+  }
+  img:hover {
+    filter: none;
+    opacity: 100%;
+  }
+</style>
