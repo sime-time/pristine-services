@@ -1,17 +1,26 @@
-import BookingType from "./BookingType.jsx";
+import { useState } from 'react';
+import BookingClean from "./BookingClean.jsx";
 import BookingFrequency from "./BookingFrequency.jsx";
 import BookingCalendar from "./BookingCalendar.jsx";
 import BookingTime from "./BookingTime.jsx";
 import BookingBanner from "./BookingBanner.jsx";
 
 function BookingFlow() {
+  const [bookingData, setBookingData] = useState(
+    {
+      cleanType: '-',
+      bedrooms: '-',
+      bathrooms: '-',
+    }
+  );
+
   return (
     <>
       <header>
-        <BookingBanner />
+        <BookingBanner data={bookingData} />
       </header>
       <main>
-        <BookingType />
+        <BookingClean setData={setBookingData} />
         <BookingFrequency />
         <BookingCalendar />
         <BookingTime />
