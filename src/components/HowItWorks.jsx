@@ -20,7 +20,7 @@ function HowItWorks() {
   const thirdStep = {
     icon: <MdOutlineBeachAccess />,
     title: "Rest and relax",
-    content: <>Sit back and enjoy a clean space. Provide feedback by leaving a <a href="https://g.page/r/CTMgCs8XxIH3EB0/review">review</a></>
+    content: <>Sit back and enjoy a clean space. Provide feedback by leaving a <a href="https://g.page/r/CTMgCs8XxIH3EB0/review">review.</a></>
   };
 
   return (

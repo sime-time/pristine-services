@@ -1,39 +1,32 @@
 import AssuranceCard from "./AssuranceCard.jsx";
-import { FaClipboardCheck } from "react-icons/fa6";
-import { FaUserCheck } from "react-icons/fa6";
-import { FaCalendarCheck } from "react-icons/fa6";
 import { PiSprayBottleFill, PiSprayBottle } from "react-icons/pi";
-import { LuCalendarClock } from "react-icons/lu";
-import { ImProfile } from "react-icons/im";
-import { BsClipboard2Check, BsClipboard2CheckFill } from "react-icons/bs";
-import { FiUserCheck } from "react-icons/fi";
+import { BsClipboard2CheckFill } from "react-icons/bs";
 import { RiShieldUserFill } from "react-icons/ri";
-import { BsCalendar2CheckFill } from "react-icons/bs";
 import { IoCalendar } from "react-icons/io5";
 
 function Assurance() {
   const vettedProfessionals = {
     icon: <RiShieldUserFill />,
     title: "Vetted Professionals",
-    content: "some",
+    content: <>Our applicants undergo a <a href="/about">comprehensive hiring process</a> to ensure we provide you with quality cleaners.</>,
   }
   const flexibleScheduling = {
     icon: <IoCalendar />,
     title: "Flexible Scheduling",
-    content: "something",
+    content: <>We work with your schedule to make sure your space is clean on time, everytime. <a href="./booking">Book an appointment online</a>, or submit a <a href="./contact">contact form</a> for commercial spaces</>,
   }
   const qualityControl = {
     icon: <BsClipboard2CheckFill />,
     title: "Quality Control",
-    content: "something",
+    content: <>All of our cleaners reference a <a href="./checklist">checklist</a> to ensure consistently spotless cleans. For commercial spaces, <a href="./contact">contact us directly</a> to customize your scope of work.</>,
   }
   const ecoFriendly = {
     icon: <PiSprayBottleFill />,
     title: "Eco-Friendly Products",
-    content: "something",
+    content: "Our cleaners use enviornmentally friendly cleaning products so you can live in your space worry-free.",
   }
   return (
-    <section id="assurances" className="container d-flex flex-column flex-md-row align-items-center gap-5 gap-md-3 my-5 py-5 bg-primary-subtle rounded-4 px-5">
+    <section id="assurances" className="container d-flex flex-column flex-md-row align-items-center gap-5 gap-md-1 my-5 py-5 bg-primary-subtle rounded-4 px-5">
       <div className="text-center text-md-start">
         <h1 className="display-4">The Pristine Difference</h1>
         <h2 className="fw-normal">Discover why home and business owners love and trust Pristine Services.</h2>
