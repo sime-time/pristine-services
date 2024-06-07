@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import FormCTA from "../components/FormCTA.jsx";
+import Hero from "../components/Hero.jsx";
+import BookingCTA from "../components/Booking/BookingCTA.jsx";
 import PartnerLogos from "../components/PartnerLogos.astro";
 import HowItWorks from "../components/HowItWorks.jsx";
 import Assurance from "../components/Assurance.jsx";
@@ -10,11 +11,17 @@ import Reviews from "../components/Reviews.jsx";
 <Layout title="Pristine Clean">
   <main>
     <section class="bg-primary-subtle pb-5">
-      <FormCTA client:load />
+      <Hero client:load />
     </section>
+
     <PartnerLogos />
     <HowItWorks />
     <Assurance />
     <Reviews client:visible />
+
+    <section class="container mb-5 pb-5 pt-1">
+      <h1 class="fw-bold display-4 my-5 text-center">Book a clean today</h1>
+      <BookingCTA client:visible />
+    </section>
   </main>
 </Layout>
