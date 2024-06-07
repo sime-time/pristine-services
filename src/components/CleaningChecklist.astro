@@ -1,70 +1,58 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Info from "../assets/misc/Checklist.json";
+import Info from "../assets/Checklist.json";
 import "../styles/global.css";
 import "halfmoon/css/halfmoon.min.css";
 ---
 
-                <body>
-                    <h2>What We Clean</h2>
-                    <table class="checklist-container table table-striped">
+<body>
+    <h2>What We Clean</h2>
+    <table class="checklist-container table table-striped">
+        <thead>
+            {
+                Info["Checklist Info"].map((area) => (
+                    <tr>
+                        <td scope="row">{area.Title}</td>
+                    </tr>
+                ))
+            }
+            <tr>
+                {
+                    Info["Cleaning Types"].map((type) => (
+                        <th scope="row"> {type} </th>
+                    ))
+                }
+            </tr>
+        </thead>
 
-                        <thead>
-                            {Info["Checklist Info"].map((area) => (
-                                <tr>
-                                    <td scope="row">{area.Title}</td>
-                                </tr>  
-
-                            ))}
-                            <tr>
-                                {Info["Cleaning Types"].map((type) => (
-                                    <th scope="row"> {type} </th>
-                                ))} 
-                              
-                              
-
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            
-                        </tbody>
-                    </table>
-                </body>
-            </html>
-        </div>
-    </main>
+        <tbody> </tbody>
+    </table>
+</body>
 
 <style>
-    body 
-    {
+    body {
         font-family: Arial, sans-serif;
     }
-    .checklist-container 
-    {
+    .checklist-container {
         width: 80%;
         margin: 20px auto;
         border-collapse: collapse;
     }
     .checklist-container th,
-    .checklist-container td 
-    {
+    .checklist-container td {
         border: 1px solid #ddd;
         padding: 8px;
         text-align: left;
     }
-    .checklist-container th 
-    {
+    .checklist-container th {
         background-color: var(--accent);
         color: white;
     }
-    .checkmark 
-    {
+    .checkmark {
         color: green;
         font-weight: bold;
     }
-    .cross 
-    {
+    .cross {
         color: red;
         font-weight: bold;
     }

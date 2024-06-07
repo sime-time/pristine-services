@@ -8,17 +8,17 @@ function Assurance() {
   const vettedProfessionals = {
     icon: <RiShieldUserFill />,
     title: "Vetted Professionals",
-    content: <>Our applicants undergo a <a href="/about">comprehensive hiring process</a> to ensure we provide you with quality cleaners.</>,
+    content: <>Our applicants undergo a <a href="/about">comprehensive hiring process</a> to provide you with quality cleaners.</>,
   }
   const flexibleScheduling = {
     icon: <IoCalendar />,
     title: "Flexible Scheduling",
-    content: <>We work with your schedule to make sure your space is clean on time, everytime. <a href="./booking">Book an appointment online</a>, or submit a <a href="./contact">contact form</a> for commercial spaces</>,
+    content: <>We work with your schedule to make sure your space is clean on time, everytime.</>,
   }
   const qualityControl = {
     icon: <BsClipboard2CheckFill />,
     title: "Quality Control",
-    content: <>All of our cleaners reference a <a href="./checklist">checklist</a> to ensure consistently spotless cleans. For commercial spaces, <a href="./contact">contact us directly</a> to customize your scope of work.</>,
+    content: <>All of our cleaners reference a <a href="./checklist">checklist</a> to ensure consistently spotless cleans. </>,
   }
   const ecoFriendly = {
     icon: <PiSprayBottleFill />,
