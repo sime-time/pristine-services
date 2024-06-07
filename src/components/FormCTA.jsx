@@ -1,5 +1,8 @@
 import Select from 'react-select';
-import { MdInfoOutline } from "react-icons/md";
+import { FaCheck } from "react-icons/fa6";
+import { FaShieldAlt } from "react-icons/fa";
+import { LuLeaf } from "react-icons/lu";
+import { LuInfo } from "react-icons/lu";
 
 function FormCTA() {
 
@@ -36,13 +39,18 @@ function FormCTA() {
     <div className="container d-flex gap-4 flex-column">
       <h1 className="fw-bold display-2 my-4">Save Time.<br />Reset Your Space.</h1>
       <div className="d-none d-md-block">
-        <a href="/cleantypes" className="text-secondary text-opacity-75"><span><MdInfoOutline /></span> Discover which clean type is right for you </a>
+        <a href="/cleantypes" className="link-dark opacity-50 d-flex gap-1"><span><LuInfo /></span>Discover which clean type is right for you </a>
       </div>
       <div className="d-flex justify-content-start align-items-center flex-wrap z-3">
         <div className="shadow flex-fill w-25 d-none d-md-block"><Select options={cleantypes} defaultValue={cleantypes[0]} classNames={styles} /></div>
         <div className="shadow flex-fill w-25"><Select options={bedrooms} defaultValue={bedrooms[0]} classNames={styles} /></div>
         <div className="shadow flex-fill w-25"><Select options={bathrooms} defaultValue={bathrooms[0]} classNames={styles} /></div>
         <a href="/booking" className="shadow btn btn-primary btn-lg flex-fill rounded-0 w-100 w-md-auto cta-book-now py-3 border-0" type="submit">Book Now</a>
+      </div>
+      <div className="d-none mt-4 d-md-flex flex-row justify-content-between fw-bold opacity-75">
+        <a href="./about" className="link-dark d-flex gap-1"><span><FaShieldAlt /></span>Cleaners qualified by our hiring process</a>
+        <a href="./checklist" className="link-dark d-flex gap-1"><span><FaCheck /></span>Comprehensive cleaning checklist</a>
+        <a href="#assurances" className="link-dark d-flex gap-1"><span><LuLeaf /></span>Use eco-friendly products</a>
       </div>
     </div>
   );
