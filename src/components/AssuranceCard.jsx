@@ -1,6 +1,6 @@
 function AssuranceCard({ card }) {
   return (
-    <div className="card border-0 rounded-4 shadow py-3 px-2 specific-w-md-350 h-100">
+    <div className="card border-0 rounded-4 shadow py-3 px-2 specific-w-xl-350 h-100">
       <div className="card-body d-flex flex-column ">
         <div className="display-2 mb-4 text-primary">{card.icon}</div>
         <h3 className="card-title">{card.title}</h3>

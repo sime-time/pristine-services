@@ -32,7 +32,7 @@ function Assurance() {
         <h2 className="fw-normal">Discover why home and business owners love and trust Pristine Services.</h2>
         <a href="./booking" className="btn btn-primary btn-lg py-3 px-4 mt-4 fs-5 fw-bold">Book Now</a>
       </div>
-      <div className="row row-cols-1 row-cols-md-2 g-4">
+      <div className="row row-cols-1 row-cols-lg-2 g-4">
         <div className="col">
           <AssuranceCard card={vettedProfessionals} />
         </div>
