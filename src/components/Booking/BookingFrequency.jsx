@@ -1,7 +1,7 @@
 import BookingNextButton from "./BookingNextButton.jsx";
 import BookingRadio from "./BookingRadio.jsx";
 
-function BookingFrequency() {
+function BookingFrequency({ setData }) {
   return (
     <div className="form-container my-4">
       <div className="d-flex flex-column justify-content-center align-items-center">
@@ -12,10 +12,10 @@ function BookingFrequency() {
         <div>
           <label className="form-label h6">FREQUENCY</label>
           <div className="row border border-primary">
-            <BookingRadio name="frequency" id="one-time" label="Once" />
-            <BookingRadio name="frequency" id="weekly" label="Weekly" />
-            <BookingRadio name="frequency" id="biweekly" label="Biweekly" />
-            <BookingRadio name="frequency" id="monthly" label="Monthly" />
+            <BookingRadio name="frequency" id="one-time" label="Once" setter={setData} />
+            <BookingRadio name="frequency" id="weekly" label="Weekly" setter={setData} />
+            <BookingRadio name="frequency" id="biweekly" label="Biweekly" setter={setData} />
+            <BookingRadio name="frequency" id="monthly" label="Monthly" setter={setData} />
           </div>
         </div>
         <BookingNextButton />

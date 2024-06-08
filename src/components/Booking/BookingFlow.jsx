@@ -4,6 +4,7 @@ import BookingFrequency from "./BookingFrequency.jsx";
 import BookingCalendar from "./BookingCalendar.jsx";
 import BookingTime from "./BookingTime.jsx";
 import BookingBanner from "./BookingBanner.jsx";
+import { today } from '@internationalized/date';
 
 function BookingFlow() {
   const [bookingData, setBookingData] = useState(
@@ -11,6 +12,9 @@ function BookingFlow() {
       cleanType: '-',
       bedrooms: '-',
       bathrooms: '-',
+      frequency: '-',
+      date: today(),
+      time: '-',
     }
   );
 
@@ -21,8 +25,8 @@ function BookingFlow() {
       </header>
       <main>
         <BookingClean setData={setBookingData} />
-        <BookingFrequency />
-        <BookingCalendar />
+        <BookingFrequency setData={setBookingData} />
+        <BookingCalendar data={bookingData} setData={setBookingData} />
         <BookingTime />
       </main>
     </>
