@@ -1,14 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import CleaningChecklist from "../components/CleaningChecklist.jsx";
+import ChecklistTabs from "../components/ChecklistTabs.jsx";
 ---
 
-<Layout title="Pristine Services">
-    <main>
+<Layout title="Pristine Cleaning Checklist">
+    <main class="bg-primary-subtle">
         <div class="container">
-            <h1>Cleaning Checklist</h1>
-
-            <CleaningChecklist client:load />
+            <h1 class="display-3 text-center py-5">Cleaning Checklist</h1>
+            <ChecklistTabs client:load />
         </div>
     </main>
 </Layout>

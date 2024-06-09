@@ -5,7 +5,7 @@ function CleanTypeCard({ title, btnLabel, btnHref, description }) {
 
         <div className="d-flex flex-column justify-content-between gap-2 mb-2">
           <h2 className="card-title">{title}</h2>
-          <div><a href={btnHref} className="btn btn-outline-primary btn-lg px-4 py-2 fs-5 fw-bold">{btnLabel}</a></div>
+          <div><a href={btnHref} className="btn btn-outline-primary btn-lg py-2 px-4 fs-5 border-2 fw-bold">{btnLabel}</a></div>
         </div>
 
         <div className="d-flex flex-column text-wrap fs-5 lh-lg specific-w-md-600">
@@ -17,3 +17,4 @@ function CleanTypeCard({ title, btnLabel, btnHref, description }) {
   );
 }
 export default CleanTypeCard;
+

@@ -26,7 +26,7 @@ function BookingTimeList() {
   return (
     <div className="d-flex z-3 w-50">
       <div className="shadow flex-fill">
-        <Select options={availableTimes} />
+        <Select options={availableTimes} getOptionValue={handleCheck} />
       </div>
     </div>
   );

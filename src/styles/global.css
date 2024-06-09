@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poetsen+One&display=swap');
-
 :root {
   color-scheme: light;
   --border-radius: 1.5rem;
   --background: hsl(0, 100%, 99%);
   --text: hsl(150, 88%, 7%);
-  --bs-body-font-family: "Mulish", sans-serif !important;
+  --bs-font-sans-serif: "Mulish", sans-serif !important;
+  --bs-font-serif: "Poetsen One" !important;
+  --bs-body-font-family: var(--bs-font-sans-serif);
   /* primary color 
   --bs-blue-hue: ;
   --bs-blue-staturation: ; */
@@ -13,7 +13,6 @@
   /* secondary color 
   --bs-gray-hue: 202;
   --bs-gray-saturation: 100%; */
-
 }
 
 body {
@@ -24,7 +23,12 @@ body {
 h1,
 h3,
 a {
-  font-family: "Poetsen One";
+  font-weight: 400;
+  font-family: var(--bs-font-serif) !important;
+}
+
+.btn {
+  font-family: var(--bs-body-font-family) !important;
 }
 
 /* CALENDAR */
