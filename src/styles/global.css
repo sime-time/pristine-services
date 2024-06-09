@@ -31,50 +31,13 @@ a {
   font-family: var(--bs-body-font-family) !important;
 }
 
-/* CALENDAR */
-.react-aria-CalendarGridHeader {
-  text-align: center;
-}
-
-.react-aria-CalendarCell {
-  line-height: 2rem;
-  text-align: center;
-  outline: 2px solid var(--bs-primary);
-  padding: 1rem;
-  font-weight: bold;
-  cursor: default;
-
-  &[data-outside-month] {
-    display: none;
-  }
-
-  &[data-pressed] {
-    background: var(--bs-secondary);
-  }
-
-  &[data-focus-visible] {
-    outline: 2px solid var(--bs-info);
-    outline-offset: 2px;
-  }
-
-  &[data-selected] {
-    background: var(--bs-primary);
-    color: var(--bs-white);
-  }
-
-  &[data-disabled] {
-    background: var(--bs-form-disabled-bg);
-    color: var(--bs-form-disabled-color);
-  }
-}
-
 .form-container {
   max-width: 1000px;
   margin: auto;
 }
 
 .card-arrow {
-  transition: transform 0.3s;
+  transition: transform 0.5s;
 }
 
 @media (max-width: 768px) {

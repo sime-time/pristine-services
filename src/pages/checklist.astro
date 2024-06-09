@@ -1,13 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import ChecklistTabs from "../components/ChecklistTabs.jsx";
+import ChecklistTabs from "../components/Checklist/ChecklistTabs.jsx";
+import BookingCTA from "../components/Booking/BookingCTA.jsx";
 ---
 
 <Layout title="Pristine Cleaning Checklist">
-    <main class="bg-primary-subtle">
-        <div class="container">
-            <h1 class="display-3 text-center py-5">Cleaning Checklist</h1>
-            <ChecklistTabs client:load />
-        </div>
+    <main>
+        <section class="bg-primary-subtle border-bottom">
+            <div class="container pb-5">
+                <h1 class="display-3 text-center py-5">Cleaning Checklist</h1>
+                <ChecklistTabs client:load />
+            </div>
+        </section>
+        <section class="container mb-5 pb-5 pt-1">
+            <h1 class="fw-bold display-4 my-5 text-center">
+                Book a clean today
+            </h1>
+            <BookingCTA client:visible />
+        </section>
     </main>
 </Layout>

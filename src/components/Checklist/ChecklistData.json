@@ -1,0 +1,266 @@
+{
+    "Kitchen": [
+        {
+            "task": "Remove cobwebs",
+            "standard_clean": true,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": true,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Dust light fixtures",
+            "standard_clean": true,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": true,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Dust blinds, windowsills, & frames",
+            "standard_clean": false,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": false,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Dust ceiling fans",
+            "standard_clean": false,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": false,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Clean sink and countertops",
+            "standard_clean": true,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": false,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Clean microwave (inside & out)",
+            "standard_clean": false,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": null,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Clean stovetop",
+            "standard_clean": true,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": true,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Clean appliance exteriors",
+            "standard_clean": true,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": true,
+            "airbnb_deep": true
+        }
+    ],
+    "Bathrooms": [
+        {
+            "task": "Remove cobwebs",
+            "standard_clean": true,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": true,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Dust light fixtures",
+            "standard_clean": true,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": true,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Dust blinds, windowsills, & frames",
+            "standard_clean": false,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": false,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Dust ceiling fans",
+            "standard_clean": false,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": false,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Clean sink and countertops",
+            "standard_clean": true,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": false,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Clean microwave (inside & out)",
+            "standard_clean": false,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": null,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Clean stovetop",
+            "standard_clean": true,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": true,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Clean appliance exteriors",
+            "standard_clean": true,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": true,
+            "airbnb_deep": true
+        }
+    ],
+    "Bedrooms": [
+        {
+            "task": "Remove cobwebs",
+            "standard_clean": true,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": true,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Dust light fixtures",
+            "standard_clean": true,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": true,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Dust blinds, windowsills, & frames",
+            "standard_clean": false,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": false,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Dust ceiling fans",
+            "standard_clean": false,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": false,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Clean sink and countertops",
+            "standard_clean": true,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": false,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Clean microwave (inside & out)",
+            "standard_clean": false,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": null,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Clean stovetop",
+            "standard_clean": true,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": true,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Clean appliance exteriors",
+            "standard_clean": true,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": true,
+            "airbnb_deep": true
+        }
+    ],
+    "Common": [
+        {
+            "task": "Remove cobwebs",
+            "standard_clean": true,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": true,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Dust light fixtures",
+            "standard_clean": true,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": true,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Dust blinds, windowsills, & frames",
+            "standard_clean": false,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": false,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Dust ceiling fans",
+            "standard_clean": false,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": false,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Clean sink and countertops",
+            "standard_clean": true,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": false,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Clean microwave (inside & out)",
+            "standard_clean": false,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": null,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Clean stovetop",
+            "standard_clean": true,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": true,
+            "airbnb_deep": true
+        },
+        {
+            "task": "Clean appliance exteriors",
+            "standard_clean": true,
+            "deep_clean": true,
+            "moving_clean": true,
+            "airbnb_turnover": true,
+            "airbnb_deep": true
+        }
+    ]
+}

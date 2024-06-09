@@ -1,5 +1,5 @@
 import AssuranceCard from "./AssuranceCard.jsx";
-import { PiSprayBottleFill, PiSprayBottle } from "react-icons/pi";
+import { PiSprayBottleFill } from "react-icons/pi";
 import { BsClipboard2CheckFill } from "react-icons/bs";
 import { RiShieldUserFill } from "react-icons/ri";
 import { IoCalendar } from "react-icons/io5";
