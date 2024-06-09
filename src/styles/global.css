@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poetsen+One&display=swap');
+
 :root {
   color-scheme: light;
   --border-radius: 1.5rem;
@@ -17,6 +19,12 @@
 body {
   color: var(--text);
   background-color: var(--background);
+}
+
+h1,
+h3,
+a {
+  font-family: "Poetsen One";
 }
 
 /* CALENDAR */

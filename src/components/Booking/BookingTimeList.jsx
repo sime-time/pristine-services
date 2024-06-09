@@ -1,30 +1,34 @@
-import BookingRadio from './BookingRadio.jsx';
+import Select from 'react-select';
 
 function generateTimeArray(startHour, endHour) {
   const times = [];
   for (let hour = startHour; hour <= endHour; hour++) {
     let period = hour < 12 ? 'AM' : 'PM';
     let formattedHour = hour % 12 || 12; // convert to 12 hour format
+
     let timeHour = `${formattedHour}:00 ${period}`;
     let timeHalfHour = `${formattedHour}:30 ${period}`;
-    times.push(timeHour);
-    times.push(timeHalfHour);
+
+    times.push({ value: timeHour, label: timeHour });
+    times.push({ value: timeHalfHour, label: timeHalfHour });
   }
   return times;
 }
 
 function BookingTimeList() {
-  const times = generateTimeArray(8, 19);
+
+  const availableTimes = generateTimeArray(8, 19);
+
+  function handleCheck() {
+    setter(prevData => ({ ...prevData, time: "7:oo pm" }));
+  }
 
   return (
-    <ul className="border border-primary list-group list-group-flush">
-      {times.map((time, index) =>
-        <li key={index} className="list-group-item list-group-item-action p-3">
-          <input className="form-check-input me-2" type="radio" name="apt-times" value={time} id={time} />
-          <label className="form-check-label stretched-link" htmlFor={time}>{time}</label>
-        </li>
-      )}
-    </ul>
+    <div className="d-flex z-3 w-50">
+      <div className="shadow flex-fill">
+        <Select options={availableTimes} />
+      </div>
+    </div>
   );
 }
 

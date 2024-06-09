@@ -27,7 +27,7 @@ function BookingFlow() {
         <BookingClean setData={setBookingData} />
         <BookingFrequency setData={setBookingData} />
         <BookingCalendar data={bookingData} setData={setBookingData} />
-        <BookingTime />
+        <BookingTime day={bookingData.date} setData={setBookingData} />
       </main>
     </>
   );
