@@ -27,6 +27,10 @@ a {
   font-family: var(--bs-font-serif) !important;
 }
 
+thead>tr>th {
+  font-family: var(--bs-font-serif)
+}
+
 .btn {
   font-family: var(--bs-body-font-family) !important;
 }

@@ -6,24 +6,24 @@ import ChecklistData from './ChecklistData.json';
 function CleaningChecklist() {
   return (
     <Tabs
-      defaultActiveKey="kitchen"
+      defaultActiveKey="standard"
       id="cleaning-checklists"
       transition={false}
       className="fs-5 rounded-3 rounded-bottom-0 bg-primary-subtle"
       variant="tabs"
       justify
     >
-      <Tab eventKey="kitchen" title="Kitchen" className="bg-white rounded-bottom border border-top-0">
-        <ChecklistTable data={ChecklistData.Kitchen} />
+      <Tab eventKey="standard" title="Standard Clean" className="bg-white rounded-bottom border border-top-0">
+        <ChecklistTable list={ChecklistData.Standard} />
       </Tab>
-      <Tab eventKey="bathrooms" title="Bathrooms" className="bg-white rounded-bottom border border-top-0">
-        <ChecklistTable data={ChecklistData.Bathrooms} />
+      <Tab eventKey="deep" title="Deep Clean" className="bg-white rounded-bottom border border-top-0">
+        <ChecklistTable list={ChecklistData.Deep} />
       </Tab>
-      <Tab eventKey="bedrooms" title="Bedrooms" className="bg-white rounded-bottom border border-top-0">
-        <ChecklistTable data={ChecklistData.Bedrooms} />
+      <Tab eventKey="move-in-out" title="Move In/Out" className="bg-white rounded-bottom border border-top-0">
+        <ChecklistTable list={ChecklistData.Deep} />
       </Tab>
-      <Tab eventKey="common-areas" title="Common" className="bg-white rounded-bottom border border-top-0">
-        <ChecklistTable data={ChecklistData.Common} />
+      <Tab eventKey="airbnb-turnover" title="Airbnb Turnover" className="bg-white rounded-bottom border border-top-0">
+        <ChecklistTable list={ChecklistData.Standard} />
       </Tab>
     </Tabs>
   );

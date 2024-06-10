@@ -1,33 +1,28 @@
 import Table from "react-bootstrap/cjs/Table.js";
 import { FaCheck, FaXmark } from "react-icons/fa6";
-import "../../styles/table.css";
+import React from 'react';
 
-function ChecklistTable({ data }) {
+function ChecklistTable({ list }) {
   return (
-    <div className="px-md-3 py-3">
-      <Table striped hover responsive="md">
-        <thead>
-          <tr>
-            <th></th>
-            <th>Standard Clean</th>
-            <th>Deep Clean</th>
-            <th>Moving Clean</th>
-            <th>Airbnb Turnover</th>
-            <th>Airbnb Deep</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map((task, index) => (
-            <tr key={index}>
-              <th>{task.task}</th>
-              <td>{task.standard_clean ? <FaCheck className="text-success" /> : (task.standard_clean === false ? <FaXmark className="text-danger" /> : "N/A")}</td>
-              <td>{task.deep_clean ? <FaCheck className="text-success" /> : (task.deep_clean === false ? <FaXmark className="text-danger" /> : "N/A")}</td>
-              <td>{task.moving_clean ? <FaCheck className="text-success" /> : (task.moving_clean === false ? <FaXmark className="text-danger" /> : "N/A")}</td>
-              <td>{task.airbnb_turnover ? <FaCheck className="text-success" /> : (task.airbnb_turnover === false ? <FaXmark className="text-danger" /> : "N/A")}</td>
-              <td>{task.airbnb_deep ? <FaCheck className="text-success" /> : (task.airbnb_deep === false ? <FaXmark className="text-danger" /> : "N/A")}</td>
-            </tr>
-          ))}
-        </tbody>
+    <div className="px-md-5 pb-3">
+      <Table striped hover>
+
+        {Object.entries(list).map(([subListName, subList], index) => (
+          <React.Fragment key={index}>
+            <thead>
+              <tr><th colSpan="2" className="text-start fs-3 pt-4">{subListName}</th></tr>
+            </thead>
+            <tbody className="border-start border-end">
+              {Object.entries(subList).map(([task, isIncluded], subIndex) => (
+                <tr key={subIndex} className="fs-5">
+                  <td>{task}</td>
+                  <td className="text-center">{isIncluded ? <FaCheck className="text-success" /> : <FaXmark className="text-danger" />}</td>
+                </tr>
+              ))}
+            </tbody>
+          </React.Fragment>
+        ))}
+
       </Table>
     </div>
   );
