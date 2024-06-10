@@ -9,7 +9,7 @@ function CleaningChecklist() {
       defaultActiveKey="standard"
       id="cleaning-checklists"
       transition={false}
-      className="fs-5 rounded-3 rounded-bottom-0 bg-primary-subtle"
+      className="rounded-3 rounded-bottom-0 bg-primary-subtle"
       variant="tabs"
       justify
     >
@@ -24,6 +24,9 @@ function CleaningChecklist() {
       </Tab>
       <Tab eventKey="airbnb-turnover" title="Airbnb Turnover" className="bg-white rounded-bottom border border-top-0">
         <ChecklistTable list={ChecklistData.Standard} />
+      </Tab>
+      <Tab eventKey="airbnb-deep" title="Airbnb Deluxe" className="bg-white rounded-bottom border border-top-0">
+        <ChecklistTable list={ChecklistData.Deep} />
       </Tab>
     </Tabs>
   );
