@@ -12,7 +12,7 @@ function ChecklistTable({ list }) {
             <thead>
               <tr><th colSpan="2" className="text-start fs-3 pt-4">{subListName}</th></tr>
             </thead>
-            <tbody className="">
+            <tbody className="border-table-edges ">
               {Object.entries(subList).map(([task, isIncluded], subIndex) => (
                 <tr key={subIndex} className="fs-5">
                   <td>{task}</td>

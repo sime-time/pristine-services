@@ -1,17 +1,18 @@
 :root {
   color-scheme: light;
   --border-radius: 1.5rem;
-  --background: hsl(0, 100%, 99%);
-  --text: hsl(150, 88%, 7%);
+  --background: hsl(320, 60%, 97%);
+  --text: hsl(319, 71, 28);
+
   --bs-font-sans-serif: "Mulish", sans-serif !important;
   --bs-font-serif: "Poetsen One" !important;
   --bs-body-font-family: var(--bs-font-sans-serif);
-  /* primary color 
-  --bs-blue-hue: ;
-  --bs-blue-staturation: ; */
+  /* primary color */
+  --bs-blue-hue: 320;
+  --bs-blue-staturation: 84%;
 
   /* secondary color 
-  --bs-gray-hue: 202;
+  --bs-gray-hue: 214;
   --bs-gray-saturation: 100%; */
 }
 
@@ -29,6 +30,11 @@ a {
 
 thead>tr>th {
   font-family: var(--bs-font-serif)
+}
+
+.border-table-edges {
+  border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+  border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
 }
 
 .btn {
@@ -56,5 +62,10 @@ thead>tr>th {
 
   .card-arrow {
     transform: rotate(90deg);
+  }
+
+  .border-table-edges {
+    border-left: none !important;
+    border-right: none !important;
   }
 }
