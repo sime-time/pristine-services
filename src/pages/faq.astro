@@ -7,17 +7,19 @@ import Contact from "./contact.astro";
 ---
 
 <Layout title="Pristine Services">
-  <main class="container">
-    <section class="text-center pt-5">
-      <h1 class="fw-bold display-4">Frequently Asked Questions</h1>
+  <main>
+    <section class="bg-primary-subtle pb-5 border-bottom">
+      <div class="text-center pt-5 container">
+        <h1 class="fw-bold display-4">Frequently Asked Questions</h1>
+      </div>
+
+      <div class="d-flex justify-content-center container">
+        <FAQ client:load />
+      </div>
     </section>
 
-    <section class="mb-5 d-flex justify-content-center">
-      <FAQ client:load />
-    </section>
-
-    <section class="d-flex flex-column align-items-center">
-      <h1 class="fw-bold display-4 pb-4">Any other questions?</h1>
+    <section class="container d-flex flex-column align-items-center mt-4">
+      <h1 class="fw-bold display-4 py-4 text-center">Any other questions?</h1>
       <div class="bg-primary-subtle rounded-4 pt-4 w-100 w-md-75">
         <ContactPoints />
       </div>
