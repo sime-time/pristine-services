@@ -9,7 +9,7 @@ function CleaningChecklist() {
       defaultActiveKey="standard"
       id="cleaning-checklists"
       transition={false}
-      className="rounded-3 rounded-bottom-0 bg-primary-subtle"
+      className="rounded-3 rounded-bottom-0 bg-primary-subtle fw-bold"
       variant="tabs"
       justify
     >
