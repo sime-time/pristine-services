@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import ContactForm from "../components/ContactForm.jsx";
-import ContactPoints from "../components/ContactPoints.jsx";
+import ContactForm from "../components/Contact/ContactForm.jsx";
+import ContactPoints from "../components/Contact/ContactPoints.jsx";
 ---
 
 <Layout title="Contact Pristine Clean">
@@ -14,11 +14,11 @@ import ContactPoints from "../components/ContactPoints.jsx";
     </section>
 
     <section class="row">
-      <div class="col-md-3">
-        <ContactPoints />
-      </div>
       <div class="col-md-9">
         <ContactForm />
+      </div>
+      <div class="col-md-3">
+        <ContactPoints />
       </div>
     </section>
   </main>

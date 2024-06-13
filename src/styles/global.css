@@ -50,8 +50,8 @@ thead>tr>th {
   transition: transform 0.5s;
 }
 
-.contact-points a {
-  font-family: var(--bs-font-sans-serif);
+.contact-points>a {
+  font-family: var(--bs-font-sans-serif) !important;
 }
 
 @media (max-width: 768px) {

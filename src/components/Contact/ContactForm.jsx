@@ -2,7 +2,7 @@ import ContactInput from "./ContactInput.jsx";
 
 function ContactForm() {
   return (
-    <form className="d-flex flex-column gap-4 h-100 w-100">
+    <form className="d-flex flex-column gap-4 h-100 w-100 mb-5">
       <div className="d-flex gap-3 w-100">
         <ContactInput label="Full Name" type="text" id="name" placeholder="Full Name" />
         <ContactInput label="Email Address" type="email" id="email" placeholder="name@email.com" />
