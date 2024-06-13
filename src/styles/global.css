@@ -50,6 +50,10 @@ thead>tr>th {
   transition: transform 0.5s;
 }
 
+.contact-points a {
+  font-family: var(--bs-font-sans-serif);
+}
+
 @media (max-width: 768px) {
 
   .cta-book-now {

@@ -1,104 +1,26 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ContactForm from "../components/ContactForm.jsx";
+import ContactPoints from "../components/ContactPoints.jsx";
 ---
 
-<Layout title="Pristine Services">
-  <main>
-    <div class="container">
-      <div class="text-center">
-        <h1>Get a commercial quote</h1>
+<Layout title="Contact Pristine Clean">
+  <main class="container">
+    <section>
+      <div class="text-center my-5">
+        <h1 class="fw-bold display-4">Get a commercial quote</h1>
         <h2 class="fw-normal">We'll be in touch shortly!</h2>
       </div>
+    </section>
 
-      <form action="" method="post" class="contact-form">
-        <div class="row g-3">
-          <div class="col-sm">
-            <label class="form-label" for="Name">Name</label>
-            <input
-              class="form-control"
-              id="Name"
-              name="Name"
-              placeholder="John Doe"
-            />
-          </div>
-
-          <div class="col-sm">
-            <label class="form-label" for="Email">Email Address</label>
-            <input
-              class="form-control"
-              id="Email"
-              name="Email"
-              placeholder="johnDoe@example.com"
-            />
-          </div>
-        </div>
-
-        <div class="row g-3">
-          <div class="col-sm">
-            <label class="form-label" for="Phone">Phone Number</label>
-            <input
-              type="tel"
-              class="form-control"
-              id="Phone"
-              name="Phone"
-              placeholder="(123) 456-7890"
-            />
-          </div>
-
-          <div class="col-sm">
-            <label class="form-label" for="BusinessName">Business Name</label>
-            <input
-              class="form-control"
-              id="BusinessName"
-              name="BusinessName"
-              placeholder="Doe Inc."
-            />
-          </div>
-        </div>
-
-        <div class="row g-1">
-          <div class="col-sm-6">
-            <label class="form-label" for="BusinessAddress"
-              >Business Address</label
-            >
-            <input
-              id="BusinessAddress"
-              class="form-control"
-              placeholder="123 Main St."
-              aria-label="BusinessAddress"
-            />
-          </div>
-
-          <div class="col-sm-4">
-            <label class="form-label" for="Suite">Suite #</label>
-            <input
-              class="form-control"
-              id="Suite"
-              placeholder="Bldg. 1"
-              aria-label="Suite"
-            />
-          </div>
-
-          <div class="col-sm-2">
-            <label class="form-label" for="Zip">Zip</label>
-            <input
-              class="form-control"
-              id="Zip"
-              name="Zip"
-              placeholder="12345"
-            />
-          </div>
-        </div>
-
-        <label for="SqFt">Square Footage (Estimation)</label>
-        <input id="SqFt" name="SqFt" placeholder="1000" />
-
-        <label for="Message">Message</label>
-        <textarea id="Message" name="Message" placeholder="Message"></textarea>
-
-        <button type="submit" class="btn btn-primary ms-auto">Submit</button>
-      </form>
-    </div>
+    <section class="row">
+      <div class="col-md-3">
+        <ContactPoints />
+      </div>
+      <div class="col-md-9">
+        <ContactForm />
+      </div>
+    </section>
   </main>
 </Layout>
 

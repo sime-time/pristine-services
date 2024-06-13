@@ -33,7 +33,6 @@ function HowItWorks() {
         <HowItWorksCard card={happyStaff} />
         <HowItWorksCard card={qualityService} />
       </div>
-      <a href="./cleantypes" className="btn btn-outline-primary btn-lg py-3 px-4 fs-5 border-2 fw-bold">Learn more about our services</a>
     </section>
   );
 }

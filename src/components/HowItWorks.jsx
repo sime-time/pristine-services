@@ -2,7 +2,6 @@ import HowItWorksCard from "./HowItWorksCard.jsx";
 import { FaArrowRight } from "react-icons/fa6";
 import { IoCalendarOutline } from "react-icons/io5";
 import { BsDoorOpen } from "react-icons/bs";
-import { MdOutlineBeachAccess } from "react-icons/md";
 import { LuPalmtree } from "react-icons/lu";
 
 function HowItWorks() {
