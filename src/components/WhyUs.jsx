@@ -8,31 +8,30 @@ function HowItWorks() {
 
   const locallyOwned = {
     icon: <HiBuildingStorefront />,
-    title: "Locally owned",
-    content: <><a href="./booking">Book online</a>, or submit a <a href="./contact">contact form</a> for commercial spaces.</>
+    title: "Locally owned and operated",
+    content: "As a local business rooted in Fortville, Indiana, we are dedicated to providing exceptional care for both our customers and our community."
   }
 
-  const secondStep = {
+  const happyStaff = {
     icon: <FaRegFaceSmileBeam />,
-    title: "Let us in",
-    content: <>Provide entry instructions and we'll execute our <a href="./checklist">cleaning checklist!</a></>,
+    title: "Happy staff, quality cleans",
+    content: "We value and respect our staff. By ensuring all our employees earn a living wage, we guarantee exceptional work and satisfied customers"
   };
-  const thirdStep = {
+  const qualityService = {
     icon: <PiBroomBold />,
-    title: "Rest and relax",
-    content: <>Sit back and enjoy a clean space. Provide feedback by leaving a <a href="https://g.page/r/CTMgCs8XxIH3EB0/review">review.</a></>
+    title: "Quality service guaranteed",
+    content: "We strive to provide the highest level of quality, service and value to each and every customer. If you are not satisfied, please inform us."
   };
 
   return (
-    <section className="container d-flex flex-column align-items-center gap-5 my-5">
+    <section className="container d-flex flex-column align-items-center gap-5 py-5">
       <div className="text-center ">
-        <h1 className="display-4" >How it works</h1>
-        <h2 className="fw-normal">We'll clean your space at a time that works for you.</h2>
+        <h1 className="display-4" >Why Pristine Clean?</h1>
       </div>
       <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 w-75 w-md-100 ">
-        <HowItWorksCard card={firstStep} />
-        <HowItWorksCard card={secondStep} />
-        <HowItWorksCard card={thirdStep} />
+        <HowItWorksCard card={locallyOwned} />
+        <HowItWorksCard card={happyStaff} />
+        <HowItWorksCard card={qualityService} />
       </div>
       <a href="./cleantypes" className="btn btn-outline-primary btn-lg py-3 px-4 fs-5 border-2 fw-bold">Learn more about our services</a>
     </section>
