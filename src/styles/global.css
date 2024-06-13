@@ -6,6 +6,10 @@
   --bs-font-sans-serif: "Mulish", sans-serif !important;
   --bs-font-serif: "Poetsen One" !important;
   --bs-body-font-family: var(--bs-font-sans-serif);
+
+  touch-action: pan-x pan-y;
+  -ms-touch-action: pan-x pan-y;
+  height: 100%;
 }
 
 body {
