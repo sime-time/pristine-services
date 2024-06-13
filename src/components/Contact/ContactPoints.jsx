@@ -1,4 +1,4 @@
-import { FaPhoneAlt, FaEnvelope, FaFacebookSquare } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 
 function ContactPoints() {
