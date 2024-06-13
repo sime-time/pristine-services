@@ -1,19 +1,19 @@
 :root {
   color-scheme: light;
   --border-radius: 1.5rem;
-  --background: hsl(320, 60%, 97%);
+  --background: #FEF9FD;
   --text: hsl(319, 71, 28);
 
   --bs-font-sans-serif: "Mulish", sans-serif !important;
   --bs-font-serif: "Poetsen One" !important;
   --bs-body-font-family: var(--bs-font-sans-serif);
-  /* primary color */
+  /* primary color 
   --bs-blue-hue: 320;
-  --bs-blue-staturation: 84%;
+  --bs-blue-staturation: 84%; */
 
   /* secondary color 
-  --bs-gray-hue: 214;
-  --bs-gray-saturation: 100%; */
+  --bs-gray-hue: 178 !important;
+  --bs-gray-saturation: 83% !important; */
 }
 
 body {

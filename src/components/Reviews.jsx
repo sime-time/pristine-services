@@ -6,7 +6,7 @@ function Reviews() {
     <div className="container my-5 py-3">
       <div className="d-flex flex-column align-items-center gap-4">
         <h1 className="display-4 text-center">Hear what others say about us</h1>
-        <Carousel className="rounded-4 bg-primary-subtle">
+        <Carousel className="rounded-4 bg-primary-subtle ">
           <Carousel.Item className="h-100 p-5 fs-3 text-center">
             <ReviewItem reviewer="Bobby Hensley" review="I called on a tuesday afternoon strapped to find a last minute cleaner for after rehearsal, for my sisters beautfil wedding. THANK you to Pristine Clean team. Katie and her were on time and our studio space turn out spotless!" />
           </Carousel.Item>

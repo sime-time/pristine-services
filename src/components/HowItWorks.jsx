@@ -3,6 +3,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { IoCalendarOutline } from "react-icons/io5";
 import { BsDoorOpen } from "react-icons/bs";
 import { MdOutlineBeachAccess } from "react-icons/md";
+import { LuPalmtree } from "react-icons/lu";
 
 function HowItWorks() {
 
@@ -18,9 +19,9 @@ function HowItWorks() {
     content: <>Provide entry instructions and we'll execute our <a href="./checklist">cleaning checklist!</a></>,
   };
   const thirdStep = {
-    icon: <MdOutlineBeachAccess />,
+    icon: <LuPalmtree />,
     title: "Rest and relax",
-    content: <>Sit back and enjoy a clean space. Provide feedback by leaving a <a href="https://g.page/r/CTMgCs8XxIH3EB0/review">review.</a></>
+    content: <>Sit back and enjoy a clean space. Be sure to leave us a <a href="https://g.page/r/CTMgCs8XxIH3EB0/review" >review!</a></>
   };
 
   return (
@@ -31,9 +32,9 @@ function HowItWorks() {
       </div>
       <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 w-75 w-md-100 ">
         <HowItWorksCard card={firstStep} />
-        <div className="card-arrow text-secondary fs-3 mx-3"><FaArrowRight /></div>
+        <div className="card-arrow text-body fs-3 mx-3"><FaArrowRight /></div>
         <HowItWorksCard card={secondStep} />
-        <div className="card-arrow text-secondary fs-3 mx-3"><FaArrowRight /></div>
+        <div className="card-arrow text-body fs-3 mx-3"><FaArrowRight /></div>
         <HowItWorksCard card={thirdStep} />
       </div>
       <a href="./cleantypes" className="btn btn-outline-primary btn-lg py-3 px-4 fs-5 border-2 fw-bold">Learn more about our services</a>
