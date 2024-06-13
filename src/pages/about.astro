@@ -12,17 +12,17 @@ import Reviews from "../components/Reviews.jsx";
       <WhyUs />
     </section>
 
-    <section class="container mb-4 pb-4">
+    <section>
+      <PartnerLogos />
+      <Reviews client:visible />
+    </section>
+
+    <section class="container mb-5 pb-4">
       <div class="my-5 text-center">
         <h1 class="fw-bold display-4">Book your clean today</h1>
         <h2 class="fw-normal">It only takes 60 seconds to save 60+ hours!</h2>
       </div>
       <BookingCTA client:visible />
-    </section>
-
-    <section>
-      <PartnerLogos />
-      <Reviews client:visible />
     </section>
   </main>
 </Layout>

@@ -1,18 +1,34 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Accordion from "../components/Accordion.astro";
+import FAQ from "../components/FAQ/FAQ.jsx";
+import BookingCTA from "../components/Booking/BookingCTA.jsx";
+import ContactPoints from "../components/Contact/ContactPoints.jsx";
+import Contact from "./contact.astro";
 ---
 
 <Layout title="Pristine Services">
-  <main>
-    <div class="container">
-      <h1>Questions?</h1>
-      <h2>
-        Can't find an answer? Call us at (317) 513-8111 or email
-        sales@pristineclean-indy.com
-      </h2>
+  <main class="container">
+    <section class="text-center pt-5">
+      <h1 class="fw-bold display-4">Frequently Asked Questions</h1>
+    </section>
 
-      <Accordion />
-    </div>
+    <section class="mb-5 d-flex justify-content-center">
+      <FAQ client:load />
+    </section>
+
+    <section class="d-flex flex-column align-items-center">
+      <h1 class="fw-bold display-4 pb-4">Any other questions?</h1>
+      <div class="bg-primary-subtle rounded-4 pt-4 w-100 w-md-75">
+        <ContactPoints />
+      </div>
+    </section>
+
+    <section class="container mb-5 pb-4">
+      <div class="my-5 text-center">
+        <h1 class="fw-bold display-4">Book your clean today</h1>
+        <h2 class="fw-normal">It only takes 60 seconds to save 60+ hours!</h2>
+      </div>
+      <BookingCTA client:visible />
+    </section>
   </main>
 </Layout>

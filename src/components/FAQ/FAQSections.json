@@ -1,0 +1,56 @@
+[
+  {
+    "header": "Billing and Pricing",
+    "htmlId": "billing",
+    "items": [
+      {
+        "id": 0,
+        "question": "When do you charge my credit card?",
+        "answer": "We charge all credit cards on the day of service, after the cleaning is finished."
+      },
+      {
+        "id": 1,
+        "question": "What fees could I incur by canceling or rescheduling?",
+        "answer": "We only charge fees when we really need to. If you cancel or reschedule an appointment after 3:00 pm the day before your cleaning, we may charge a $40 last-minute change fee. If you choose to cancel your recurring service before your second visit, we will charge you $69, to bring your pricing closer to our 'one-time' service offering."
+      }
+    ]
+  },
+  {
+    "header": "Appointments and Scheduling",
+    "htmlId": "appointments",
+    "items": [
+      {
+        "id": 0,
+        "question": "How do I stop my recurring service?",
+        "answer": "Email or call us. You can stop whenever you like."
+      },
+      {
+        "id": 1,
+        "question": "How will I know when the maids are coming?",
+        "answer": "We send ETA text messages, or notifications from our app, when we're on our way to your home."
+      }
+    ]
+  },
+  {
+    "header": "Home Access",
+    "htmlId": "home-access",
+    "items": [
+      {
+        "id": 0,
+        "question": "How do the cleaners enter my home?",
+        "answer": "You can either be at home to let them in, hide a key somewhere, or give us a lockbox code to keep on file."
+      }
+    ]
+  },
+  {
+    "header": "Our Staff",
+    "htmlId": "staff",
+    "items": [
+      {
+        "id": 0,
+        "question": "What won't our Pristine staff clean?",
+        "answer": "For health reasons, our teams will not clean blood, feces, vomit, or urine from animals or humans."
+      }
+    ]
+  }
+]
