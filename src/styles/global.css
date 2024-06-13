@@ -11,10 +11,6 @@
 body {
   color: var(--text);
   background-color: var(--background);
-
-  touch-action: pan-x pan-y;
-  -ms-touch-action: pan-x pan-y;
-  height: 100%;
 }
 
 h1,
