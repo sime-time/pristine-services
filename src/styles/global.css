@@ -1,19 +1,11 @@
 :root {
   color-scheme: light;
-  --border-radius: 1.5rem;
   --background: #FEF9FD;
-  --text: hsl(319, 71, 28);
+  --text: var(--bs-sable-700);
 
   --bs-font-sans-serif: "Mulish", sans-serif !important;
   --bs-font-serif: "Poetsen One" !important;
   --bs-body-font-family: var(--bs-font-sans-serif);
-  /* primary color 
-  --bs-blue-hue: 320;
-  --bs-blue-staturation: 84%; */
-
-  /* secondary color 
-  --bs-gray-hue: 178 !important;
-  --bs-gray-saturation: 83% !important; */
 }
 
 body {
@@ -72,4 +64,47 @@ thead>tr>th {
     border-left: none !important;
     border-right: none !important;
   }
+}
+
+/* PRIMARY COLOR */
+:root {
+  /*
+  --bs-blue-hue: 192;
+  --bs-blue-staturation: 81%;
+  --bs-blue-hsl: var(--bs-blue-500-hsl);
+*/
+  --bs-primary-hue: var(--bs-blue-hue);
+  --bs-primary-saturation: var(--bs-blue-saturation);
+  --bs-primary-100-hsl: var(--bs-blue-100-hsl);
+  --bs-primary-200-hsl: var(--bs-blue-200-hsl);
+  --bs-primary-300-hsl: var(--bs-blue-300-hsl);
+  --bs-primary-400-hsl: var(--bs-blue-400-hsl);
+  --bs-primary-500-hsl: var(--bs-blue-500-hsl);
+  --bs-primary-600-hsl: var(--bs-blue-600-hsl);
+  --bs-primary-700-hsl: var(--bs-blue-700-hsl);
+  --bs-primary-800-hsl: var(--bs-blue-800-hsl);
+  --bs-primary-900-hsl: var(--bs-blue-900-hsl);
+  --bs-primary-100: var(--bs-blue-100);
+  --bs-primary-200: var(--bs-blue-200);
+  --bs-primary-300: var(--bs-blue-300);
+  --bs-primary-400: var(--bs-blue-400);
+  --bs-primary-500: var(--bs-blue-500);
+  --bs-primary-600: var(--bs-blue-600);
+  --bs-primary-700: var(--bs-blue-700);
+  --bs-primary-800: var(--bs-blue-800);
+  --bs-primary-900: var(--bs-blue-900);
+  --bs-primary-hsl: var(--bs-blue-hsl);
+  --bs-primary: var(--bs-blue);
+  --bs-primary-foreground-hsl: var(--bs-blue-foreground-hsl);
+  --bs-primary-foreground: var(--bs-blue-foreground);
+  --bs-primary-text-emphasis-hsl: var(--bs-blue-text-emphasis-hsl);
+  --bs-primary-text-emphasis: var(--bs-blue-text-emphasis);
+  --bs-primary-hover-bg: var(--bs-blue-hover-bg);
+  --bs-primary-active-bg: var(--bs-blue-active-bg);
+  --bs-primary-bg-subtle: var(--bs-blue-bg-subtle);
+  --bs-primary-border-subtle: var(--bs-blue-border-subtle);
+  --bs-primary-checkbox-svg: var(--bs-blue-checkbox-svg);
+  --bs-primary-dash-svg: var(--bs-blue-dash-svg);
+  --bs-primary-radio-svg: var(--bs-blue-radio-svg);
+  --bs-primary-switch-svg: var(--bs-blue-switch-svg);
 }
