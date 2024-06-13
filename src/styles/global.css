@@ -21,7 +21,7 @@ a {
 }
 
 thead>tr>th {
-  font-family: var(--bs-font-serif)
+  font-family: var(--bs-font-serif);
 }
 
 .border-table-edges {
@@ -69,10 +69,10 @@ thead>tr>th {
 /* PRIMARY COLOR */
 :root {
   /*
-  --bs-blue-hue: 192;
-  --bs-blue-staturation: 81%;
+  --bs-blue-hue: 216;
+  --bs-blue-staturation: 100%;
   --bs-blue-hsl: var(--bs-blue-500-hsl);
-*/
+  */
   --bs-primary-hue: var(--bs-blue-hue);
   --bs-primary-saturation: var(--bs-blue-saturation);
   --bs-primary-100-hsl: var(--bs-blue-100-hsl);

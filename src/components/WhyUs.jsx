@@ -24,7 +24,7 @@ function HowItWorks() {
   };
 
   return (
-    <section className="container d-flex flex-column align-items-center gap-5 py-5">
+    <section className="container d-flex flex-column align-items-center gap-5 py-5" id="why-us">
       <div className="text-center ">
         <h1 className="display-4" >Why Pristine Clean?</h1>
       </div>

@@ -14,7 +14,7 @@ function ContactForm() {
       <ContactInput label="Square Footage (Est.)" type="number" id="square-footage" placeholder="2000" isRequired={true} />
       <div className="form-floating col-12">
         <textarea className="form-control specific-h-150" placeholder="Leave any additional notes here" id="message"></textarea>
-        <label for="message">Your Message</label>
+        <label htmlFor="message">Your Message</label>
       </div>
       <div className="col-12">
         <button type="submit" className="col-12 btn btn-primary btn-lg py-3">Submit</button>

@@ -5,9 +5,9 @@ import ContactPoints from "../components/Contact/ContactPoints.jsx";
 ---
 
 <Layout title="Contact Pristine Clean">
-  <main class="container">
+  <main class="container" id="commercial-quote">
     <section>
-      <div class="text-center my-5">
+      <div class="text-center py-5">
         <h1 class="fw-bold display-4">Get a commercial quote</h1>
         <h2 class="fw-normal">We'll be in touch shortly!</h2>
       </div>
@@ -17,21 +17,9 @@ import ContactPoints from "../components/Contact/ContactPoints.jsx";
       <div class="col-md-9">
         <ContactForm />
       </div>
-      <div class="col-md-3 rounded-4 bg-primary-subtle px-2 pt-2 h-50 mb-5">
+      <div class="col-md-3 rounded-4 bg-primary-subtle pt-3 h-50 mb-5">
         <ContactPoints />
       </div>
     </section>
   </main>
 </Layout>
-
-<style>
-  @media (min-width: 700px, max-width: 768px) {
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 100vh;
-      font-size: 1.333rem;
-    }
-  }
-</style>
