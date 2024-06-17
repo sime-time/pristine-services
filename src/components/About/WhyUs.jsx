@@ -1,4 +1,4 @@
-import HowItWorksCard from "./HowItWorksCard.jsx";
+import HowItWorksCard from "../Index/HowItWorksCard.jsx";
 import { HiBuildingStorefront } from "react-icons/hi2";
 import { FaRegFaceSmileBeam } from "react-icons/fa6";
 import { PiBroomBold } from "react-icons/pi";
@@ -24,7 +24,7 @@ function HowItWorks() {
   };
 
   return (
-    <section className="container d-flex flex-column align-items-center gap-5 py-5" id="why-us">
+    <div className="container d-flex flex-column align-items-center gap-5 py-5" id="why-us">
       <div className="text-center ">
         <h1 className="display-4" >Why Pristine Clean?</h1>
       </div>
@@ -33,7 +33,7 @@ function HowItWorks() {
         <HowItWorksCard card={happyStaff} />
         <HowItWorksCard card={qualityService} />
       </div>
-    </section>
+    </div>
   );
 }
 

@@ -1,4 +1,4 @@
-import BookingCTA from "./Booking/BookingCTA.jsx";
+import BookingCTA from "../Booking/BookingCTA.jsx";
 import { FaCheck } from "react-icons/fa6";
 import { FaShieldAlt } from "react-icons/fa";
 import { LuLeaf } from "react-icons/lu";

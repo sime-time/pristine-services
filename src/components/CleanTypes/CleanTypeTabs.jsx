@@ -1,6 +1,6 @@
 import Tab from 'react-bootstrap/cjs/Tab.js';
 import Tabs from 'react-bootstrap/cjs/Tabs.js';
-import CleanTypeCard from './CleanTypeCard.jsx';
+import CleanTypeCard from '../CleanTypes/CleanTypeCard.jsx';
 
 function CleanTypeTabs() {
   const standardList = (

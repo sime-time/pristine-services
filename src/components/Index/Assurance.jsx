@@ -1,4 +1,4 @@
-import AssuranceCard from "./AssuranceCard.jsx";
+import AssuranceCard from "../Index/AssuranceCard.jsx";
 import { PiSprayBottleFill } from "react-icons/pi";
 import { BsClipboard2CheckFill } from "react-icons/bs";
 import { RiShieldUserFill } from "react-icons/ri";

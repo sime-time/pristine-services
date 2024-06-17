@@ -1,15 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import WhyUs from "../components/WhyUs.jsx";
+import WhyUs from "../components/About/WhyUs.jsx";
 import BookingCTA from "../components/Booking/BookingCTA.jsx";
 import PartnerLogos from "../components/PartnerLogos.astro";
 import Reviews from "../components/Reviews.jsx";
+import HiringProcess from "../components/About/HiringProcess.jsx";
 ---
 
 <Layout title="Pristine Services">
   <main>
-    <section>
+    <section class="bg-primary-subtle">
       <WhyUs />
+      <HiringProcess />
     </section>
 
     <section>
