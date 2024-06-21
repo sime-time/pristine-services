@@ -36,12 +36,14 @@
   height: 50px;
   border-radius: 50%;
   right: -25px;
-  top: 30px;
+  top: 28px;
   z-index: 3;
-}
-
-.tl-icon:first-child {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--bs-primary);
+  color: var(--bs-primary);
 }
 
 .right-container>.tl-icon {
@@ -122,7 +124,7 @@
 
   .left-container>.tl-icon:first-child,
   .right-container>.tl-icon:first-child {
-    left: 10px;
+    left: -7px;
   }
 
   .left-container-arrow,
